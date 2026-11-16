@@ -1,0 +1,97 @@
+[
+  {
+    "file": "BCFA_biosynthesis_pathway.pdf",
+    "bytes": 33007,
+    "sha256": "91482a51ab12bbd0f9d899b63fc7a87fcad59e1c5d2f608005fb1b5628b73c1e"
+  },
+  {
+    "file": "BCFA_biosynthesis_pathway.png",
+    "bytes": 866883,
+    "sha256": "8cae54dcdd04157f6f9c49ebbbf8f98502c119666da20111599b06cd6b812a5d"
+  },
+  {
+    "file": "BCFA_biosynthesis_pathway.svg",
+    "bytes": 45765,
+    "sha256": "d58117c98849f2b4a2e6d3e3dae0664a54ff6b68288f173472737a9411478371"
+  },
+  {
+    "file": "BCFA_mechanism_final.pdf",
+    "bytes": 32081,
+    "sha256": "12db35ee0bedf6d3d283cc7bfc80af2cc5fede4ca6fec78c4d5b2b86ab6ae1cd"
+  },
+  {
+    "file": "BCFA_mechanism_final.png",
+    "bytes": 673791,
+    "sha256": "49d26dfc28719b4f3a8ab21d09d30df9d6429f588c1c37e0a7c72c5dc19341af"
+  },
+  {
+    "file": "BCFA_mechanism_final.svg",
+    "bytes": 41371,
+    "sha256": "3943d3cfc91f736e768159676666492903f1e452870f6150a7440868bba4c553"
+  },
+  {
+    "file": "BCFA_mechanism_source.py",
+    "bytes": 5703,
+    "sha256": "a6f4441b3dfb7d5a3965cb361ebb6c1df164b623424b8ffb5003d62600c96b18"
+  },
+  {
+    "file": "BCFA_rumen_host_mechanism.pdf",
+    "bytes": 33185,
+    "sha256": "b5b4eacac77dc5d753e5b5191bc12d5ddf8605dda2b523346d7b1e8f6069eccf"
+  },
+  {
+    "file": "BCFA_rumen_host_mechanism.png",
+    "bytes": 892717,
+    "sha256": "75a7b85a11c6946a85498bf80e37ba87b3e2380673e191325d9c7569c11a0b37"
+  },
+  {
+    "file": "BCFA_rumen_host_mechanism.svg",
+    "bytes": 34811,
+    "sha256": "e97941e0c58579e3053c61ff26ce163da622e7dd2d1d24d67dcd4e60cc612260"
+  },
+  {
+    "file": "BCFA_rumen_host_mechanism_source.py",
+    "bytes": 6450,
+    "sha256": "30632ec5dd08ed56a2fba00abdc78c431f33dbd0df843536735d2215fb2a6edc"
+  },
+  {
+    "file": "BCFA_shared_mechanism.pdf",
+    "bytes": 31826,
+    "sha256": "153d14e6d1998b4047248a142f3ca546a8351e4e3437a40d84c312bab4d0eba3"
+  },
+  {
+    "file": "BCFA_shared_mechanism.png",
+    "bytes": 737701,
+    "sha256": "5f3c07d4540528285a6ea6ac5448d66af72065183e32306d6b10f30050802887"
+  },
+  {
+    "file": "BCFA_shared_mechanism.svg",
+    "bytes": 30581,
+    "sha256": "22099409052179b0cfe7d6c183e0d6080e57f5f542b24de219ac338c520296c4"
+  },
+  {
+    "file": "BCFA_shared_mechanism_source.py",
+    "bytes": 5589,
+    "sha256": "30b975d7bc8563dd2d37de5b0ff743bda379c5aca602c4d271ca4347d9a1a31a"
+  },
+  {
+    "file": "create_host_mechanism.py",
+    "bytes": 2459,
+    "sha256": "e72c071fc18abc960aa4a5ae77f9a531500339c1c7edd1b03cf69ec7f2ff1529"
+  },
+  {
+    "file": "draw_pathway.py",
+    "bytes": 6258,
+    "sha256": "f32095c73845705485de3e7bf65ca2199f0a1e0bc9c81b8d603b79469c8f2d0c"
+  },
+  {
+    "file": "rumen_host_figure_notes.md",
+    "bytes": 1427,
+    "sha256": "a953ec25a1502729cf127626020a852ff43f0a825dffec3135f724ab67860579"
+  },
+  {
+    "file": "证据与质控说明.md",
+    "bytes": 1354,
+    "sha256": "7262cc646ab4345a847c5d823162f3067277e836a119b45d682552e2db8f8e61"
+  }
+]

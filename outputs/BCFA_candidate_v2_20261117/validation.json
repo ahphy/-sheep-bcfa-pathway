@@ -1,0 +1,47 @@
+{
+  "structures": [
+    {
+      "smiles": "O=C(O)CCC(C)CCCC",
+      "canonical_smiles": "CCCCC(C)CCC(=O)O",
+      "formula": "C9H18O2",
+      "total_carbons": 9,
+      "parent_chain_carbons": 8,
+      "branch_position": 4,
+      "branch_carbons": 1,
+      "stereochemistry": "unspecified"
+    },
+    {
+      "smiles": "O=C(O)CCC(C)CCCCC",
+      "canonical_smiles": "CCCCCC(C)CCC(=O)O",
+      "formula": "C10H20O2",
+      "total_carbons": 10,
+      "parent_chain_carbons": 9,
+      "branch_position": 4,
+      "branch_carbons": 1,
+      "stereochemistry": "unspecified"
+    },
+    {
+      "smiles": "O=C(O)CCC(CC)CCCC",
+      "canonical_smiles": "CCCCC(CC)CCC(=O)O",
+      "formula": "C10H20O2",
+      "total_carbons": 10,
+      "parent_chain_carbons": 8,
+      "branch_position": 4,
+      "branch_carbons": 2,
+      "stereochemistry": "unspecified"
+    }
+  ],
+  "text_overlap_pairs": [],
+  "text_labels_checked": 91,
+  "outputs": {
+    "svg": "88d05f7dfa5a14f85e68d1f7e2cc7e1615f35eb1224d1416800f212c667c8407",
+    "pdf": "42ac6b96eb73bd31d6eb8f5553f2557270a8cfdeae27fa0237dd37a6f5bdad3f",
+    "png": "ea5944f714c2452ecc6890d026b61653f2049241349e354e53338057f0940483"
+  },
+  "versions": {
+    "rdkit": "2026.9.2",
+    "cairosvg": "2.9.1",
+    "Pillow": "13.0.0"
+  },
+  "python": "3.12.14"
+}
