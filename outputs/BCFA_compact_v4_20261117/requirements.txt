@@ -1,0 +1,4 @@
+rdkit==2026.9.2
+pygraphviz==2.0.4
+CairoSVG==2.9.1
+Pillow==13.0.0

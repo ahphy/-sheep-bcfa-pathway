@@ -1,0 +1,260 @@
+digraph "" {
+	graph [bb="0,0,1180.9,286.4",
+		bgcolor=transparent,
+		newrank=true,
+		nodesep=.10,
+		outputorder=edgesfirst,
+		pad=.1,
+		rankdir=LR,
+		ranksep=.35,
+		splines=polyline
+	];
+	node [fillcolor=white,
+		fontcolor="#253844",
+		fontname="Noto Sans CJK SC",
+		fontsize=17,
+		height=.70,
+		label="\N",
+		margin=".10,.06",
+		penwidth=1.2,
+		shape=box,
+		style="rounded,filled"
+	];
+	edge [arrowsize=.65,
+		fontname="Noto Sans CJK SC",
+		fontsize=13,
+		penwidth=1.4,
+		style=dashed
+	];
+	{
+		graph [rank=same];
+		n0_0	[color="#246fa5",
+			fixedsize=false,
+			group=MOA,
+			height=1.2,
+			label="MOA
+Acetyl-CoA · C2",
+			pos="87.075,243.2",
+			width=2.0229];
+		n1_0	[color="#8051a0",
+			fixedsize=false,
+			group=MNA,
+			height=1.2,
+			label="MNA
+Propionyl-CoA · C3",
+			pos="87.075,143.2",
+			width=2.4188];
+		n2_0	[color="#b76122",
+			fixedsize=false,
+			group=EOA,
+			height=1.2,
+			label="EOA
+Acetyl-CoA · C2",
+			pos="87.075,43.2",
+			width=2.0229];
+	}
+	{
+		graph [rank=same];
+		n0_1	[color="#246fa5",
+			fixedsize=false,
+			group=MOA,
+			height=1.2,
+			label="Straight acyl
+C4",
+			pos="317.98,243.2",
+			width=1.5854];
+		n1_1	[color="#8051a0",
+			fixedsize=false,
+			group=MNA,
+			height=1.2,
+			label="Straight acyl
+C5",
+			pos="317.98,143.2",
+			width=1.5854];
+		n2_1	[color="#b76122",
+			fixedsize=false,
+			group=EOA,
+			height=1.2,
+			label="Straight acyl
+C4",
+			pos="317.98,43.2",
+			width=1.5854];
+	}
+	{
+		graph [rank=same];
+		n0_2	[color="#246fa5",
+			fixedsize=false,
+			group=MOA,
+			height=1.2,
+			label="C7
+C2 methyl",
+			pos="555.7,243.2",
+			width=1.4];
+		n1_2	[color="#8051a0",
+			fixedsize=false,
+			group=MNA,
+			height=1.2,
+			label="C8
+C2 methyl",
+			pos="555.7,143.2",
+			width=1.4];
+		n2_2	[color="#b76122",
+			fixedsize=false,
+			group=EOA,
+			height=1.2,
+			label="C8
+C2 ethyl",
+			pos="555.7,43.2",
+			width=1.4];
+	}
+	{
+		graph [rank=same];
+		n0_3	[color="#246fa5",
+			fixedsize=false,
+			group=MOA,
+			height=1.2,
+			label="C9
+C4 methyl",
+			pos="743.25,243.2",
+			width=1.4];
+		n1_3	[color="#8051a0",
+			fixedsize=false,
+			group=MNA,
+			height=1.2,
+			label="C10
+C4 methyl",
+			pos="743.25,143.2",
+			width=1.4];
+		n2_3	[color="#b76122",
+			fixedsize=false,
+			group=EOA,
+			height=1.2,
+			label="C10
+C4 ethyl",
+			pos="743.25,43.2",
+			width=1.4];
+	}
+	{
+		graph [rank=same];
+		n0_4	[color="#246fa5",
+			fixedsize=true,
+			group=MOA,
+			height=1.2,
+			label="",
+			pos="1051.3,243.2",
+			width=3.6];
+		n1_4	[color="#8051a0",
+			fixedsize=true,
+			group=MNA,
+			height=1.2,
+			label="",
+			pos="1051.3,143.2",
+			width=3.6];
+		n2_4	[color="#b76122",
+			fixedsize=true,
+			group=EOA,
+			height=1.2,
+			label="",
+			pos="1051.3,43.2",
+			width=3.6];
+	}
+	n0_0 -> n0_1	[color="#246fa5",
+		fontcolor="#23776c",
+		label="+ malonyl
++2C",
+		lp="217.53,262.7",
+		pos="e,260.46,243.2 160.19,243.2 189.65,243.2 223.46,243.2 252.13,243.2"];
+	n0_0 -> n1_0	[pos="e,87.075,186.72 87.075,199.75 87.075,198.33 87.075,196.83 87.075,195.31",
+		style=invis,
+		weight=100];
+	n0_1 -> n0_2	[color="#246fa5",
+		fontcolor="#8051a0",
+		label="+ methylmalonyl
++3C",
+		lp="440.18,262.7",
+		pos="e,504.71,243.2 375.44,243.2 412.03,243.2 459.59,243.2 496.52,243.2"];
+	n0_1 -> n1_1	[pos="e,317.98,186.72 317.98,199.75 317.98,198.33 317.98,196.83 317.98,195.31",
+		style=invis,
+		weight=100];
+	n0_2 -> n0_3	[color="#246fa5",
+		fontcolor="#23776c",
+		label="+ malonyl
++2C",
+		lp="649.48,262.7",
+		pos="e,692.39,243.2 606.42,243.2 630.24,243.2 658.92,243.2 683.77,243.2"];
+	n0_2 -> n1_2	[pos="e,555.7,186.72 555.7,199.75 555.7,198.33 555.7,196.83 555.7,195.31",
+		style=invis,
+		weight=100];
+	n0_3 -> n0_4	[color="#246fa5",
+		fontcolor="#246fa5",
+		label="Early hydrolysis*",
+		lp="857.65,252.95",
+		pos="e,921.19,243.2 794.1,243.2 826.48,243.2 870.42,243.2 912.75,243.2"];
+	n0_3 -> n1_3	[pos="e,743.25,186.72 743.25,199.75 743.25,198.33 743.25,196.83 743.25,195.31",
+		style=invis,
+		weight=100];
+	n0_4 -> n1_4	[pos="e,1051.3,186.72 1051.3,199.75 1051.3,198.33 1051.3,196.83 1051.3,195.31",
+		style=invis,
+		weight=100];
+	n1_0 -> n1_1	[color="#8051a0",
+		fontcolor="#23776c",
+		label="+ malonyl
++2C",
+		lp="217.53,162.7",
+		pos="e,260.46,143.2 174.61,143.2 200.32,143.2 228.03,143.2 252.11,143.2"];
+	n1_0 -> n2_0	[pos="e,87.075,86.716 87.075,99.747 87.075,98.327 87.075,96.833 87.075,95.314",
+		style=invis,
+		weight=100];
+	n1_1 -> n1_2	[color="#8051a0",
+		fontcolor="#8051a0",
+		label="+ methylmalonyl
++3C",
+		lp="440.18,162.7",
+		pos="e,504.71,143.2 375.44,143.2 412.03,143.2 459.59,143.2 496.52,143.2"];
+	n1_1 -> n2_1	[pos="e,317.98,86.716 317.98,99.747 317.98,98.327 317.98,96.833 317.98,95.314",
+		style=invis,
+		weight=100];
+	n1_2 -> n1_3	[color="#8051a0",
+		fontcolor="#23776c",
+		label="+ malonyl
++2C",
+		lp="649.48,162.7",
+		pos="e,692.39,143.2 606.42,143.2 630.24,143.2 658.92,143.2 683.77,143.2"];
+	n1_2 -> n2_2	[pos="e,555.7,86.716 555.7,99.747 555.7,98.327 555.7,96.833 555.7,95.314",
+		style=invis,
+		weight=100];
+	n1_3 -> n1_4	[color="#8051a0",
+		fontcolor="#8051a0",
+		label="Early hydrolysis*",
+		lp="857.65,152.95",
+		pos="e,921.19,143.2 794.1,143.2 826.48,143.2 870.42,143.2 912.75,143.2"];
+	n1_3 -> n2_3	[pos="e,743.25,86.716 743.25,99.747 743.25,98.327 743.25,96.833 743.25,95.314",
+		style=invis,
+		weight=100];
+	n1_4 -> n2_4	[pos="e,1051.3,86.716 1051.3,99.747 1051.3,98.327 1051.3,96.833 1051.3,95.314",
+		style=invis,
+		weight=100];
+	n2_0 -> n2_1	[color="#b76122",
+		fontcolor="#23776c",
+		label="+ malonyl
++2C",
+		lp="217.53,62.7",
+		pos="e,260.46,43.2 160.19,43.2 189.65,43.2 223.46,43.2 252.13,43.2"];
+	n2_1 -> n2_2	[color="#b76122",
+		fontcolor="#b76122",
+		label="+ ethylmalonyl
++4C",
+		lp="440.18,62.7",
+		pos="e,504.71,43.2 375.44,43.2 412.03,43.2 459.59,43.2 496.52,43.2"];
+	n2_2 -> n2_3	[color="#b76122",
+		fontcolor="#23776c",
+		label="+ malonyl
++2C",
+		lp="649.48,62.7",
+		pos="e,692.39,43.2 606.42,43.2 630.24,43.2 658.92,43.2 683.77,43.2"];
+	n2_3 -> n2_4	[color="#b76122",
+		fontcolor="#b76122",
+		label="Early hydrolysis*",
+		lp="857.65,52.95",
+		pos="e,921.19,43.2 794.1,43.2 826.48,43.2 870.42,43.2 912.75,43.2"];
+}

@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1359" viewBox="0 0 2000 1359"><rect x="0" y="0" width="2000" height="2000" rx="12" fill="white" stroke="none" /><text x="1000" y="52" font-family="Noto Sans CJK SC" font-size="36" text-anchor="middle" fill="#253844" font-weight="bold">Candidate host synthesis of mutton odor-associated fatty acids</text><text x="1000" y="91" font-family="Noto Sans CJK SC" font-size="23" text-anchor="middle" fill="#596d77">MOA / MNA / EOA: primer choice + branched donor choice determine the product</text><rect x="30" y="115" width="675" height="355" rx="12" fill="#f1f6f9" stroke="#cfdae0" /><rect x="720" y="115" width="1250" height="355" rx="12" fill="#f2f8f5" stroke="#cfddd7" /><text x="54" y="155" font-family="Noto Sans CJK SC" font-size="26" text-anchor="start" fill="#253844" font-weight="bold">1  Rumen fermentation → absorption</text><text x="745" y="155" font-family="Noto Sans CJK SC" font-size="26" text-anchor="start" fill="#253844" font-weight="bold">2  Adipocyte cytosol: ACC supplies extension donors</text><text x="143" y="190" font-family="Noto Sans CJK SC" font-size="20" text-anchor="middle" fill="#596d77">Diet → microbes</text><text x="282" y="190" font-family="Noto Sans CJK SC" font-size="19" text-anchor="middle" fill="#596d77">Epithelium</text><text x="475" y="190" font-family="Noto Sans CJK SC" font-size="20" text-anchor="middle" fill="#596d77">Host handling</text><text x="881" y="190" font-family="Noto Sans CJK SC" font-size="20" text-anchor="middle" fill="#596d77">Acyl-CoA precursors</text><text x="1400" y="190" font-family="Noto Sans CJK SC" font-size="20" text-anchor="middle" fill="#596d77">CoA extension donors</text><text x="1815" y="190" font-family="Noto Sans CJK SC" font-size="19" text-anchor="middle" fill="#596d77">Retained after CO2 loss</text><path d="M274,209 L274,437 M285,209 L285,437" stroke="#a2b6c2" stroke-width="3" fill="none" /><text x="142" y="245" font-family="Noto Sans CJK SC" font-size="26" text-anchor="middle" fill="#246fa5" font-weight="bold">Acetate C2</text><path d="M242,237 L348,237" stroke="#246fa5" stroke-width="2.5" fill="none" /><polygon points="348,237 337.0,233.0 337.0,241.0" fill="#246fa5" /><text x="478" y="242" font-family="Noto Sans CJK SC" font-size="23" text-anchor="middle" fill="#246fa5" font-weight="bold">Peripheral acetate</text><text x="478" y="269" font-family="Noto Sans CJK SC" font-size="17" text-anchor="middle" fill="#596d77">Available for adipose lipogenesis</text><path d="M600,237 L754,237" stroke="#246fa5" stroke-width="2.5" fill="none" /><polygon points="754,237 743.0,233.0 743.0,241.0" fill="#246fa5" /><text x="675" y="226" font-family="Noto Sans CJK SC" font-size="17" text-anchor="middle" fill="#596d77">Activation</text><text x="878" y="245" font-family="Noto Sans CJK SC" font-size="23" text-anchor="middle" fill="#246fa5" font-weight="bold">Acetyl-CoA · C2</text><text x="878" y="270" font-family="Noto Sans CJK SC" font-size="17" text-anchor="middle" fill="#596d77">Acetyl-CoA synthetase</text><path d="M1006,237 L1190,237" stroke="#23776c" stroke-width="2.5" fill="none" /><polygon points="1190,237 1179.0,233.0 1179.0,241.0" fill="#23776c" /><text x="1098" y="226" font-family="Noto Sans CJK SC" font-size="18" text-anchor="middle" fill="#23776c" font-weight="bold">ACC</text><rect x="1210" y="210" width="391" height="55" rx="12" fill="#e1f0eb" stroke="none" /><text x="1405" y="245" font-family="Noto Sans CJK SC" font-size="24" text-anchor="middle" fill="#23776c" font-weight="bold">Malonyl-CoA · C3</text><text x="1815" y="245" font-family="Noto Sans CJK SC" font-size="29" text-anchor="middle" fill="#23776c" font-weight="bold">+2 C</text><text x="142" y="330" font-family="Noto Sans CJK SC" font-size="26" text-anchor="middle" fill="#8051a0" font-weight="bold">Propionate C3</text><path d="M242,322 L348,322" stroke="#8051a0" stroke-width="2.5" fill="none" /><polygon points="348,322 337.0,318.0 337.0,326.0" fill="#8051a0" /><text x="478" y="327" font-family="Noto Sans CJK SC" font-size="23" text-anchor="middle" fill="#8051a0" font-weight="bold">Portal propionate</text><text x="478" y="354" font-family="Noto Sans CJK SC" font-size="17" text-anchor="middle" fill="#596d77">Mainly liver → gluconeogenesis</text><path d="M600,322 L754,322" stroke="#8051a0" stroke-width="2.5" fill="none" stroke-dasharray="2 6" /><polygon points="754,322 743.0,318.0 743.0,326.0" fill="#8051a0" /><text x="675" y="311" font-family="Noto Sans CJK SC" font-size="17" text-anchor="middle" fill="#596d77">Supply unverified</text><text x="878" y="330" font-family="Noto Sans CJK SC" font-size="23" text-anchor="middle" fill="#8051a0" font-weight="bold">Propionyl-CoA · C3</text><path d="M1006,322 L1190,322" stroke="#8051a0" stroke-width="2.5" fill="none" stroke-dasharray="9 6" /><polygon points="1190,322 1179.0,318.0 1179.0,326.0" fill="#8051a0" /><text x="1098" y="311" font-family="Noto Sans CJK SC" font-size="18" text-anchor="middle" fill="#8051a0" font-weight="bold">ACC side reaction*</text><rect x="1210" y="295" width="391" height="55" rx="12" fill="#eee7f4" stroke="none" /><text x="1405" y="330" font-family="Noto Sans CJK SC" font-size="24" text-anchor="middle" fill="#8051a0" font-weight="bold">Methylmalonyl-CoA · C4</text><text x="1815" y="330" font-family="Noto Sans CJK SC" font-size="29" text-anchor="middle" fill="#8051a0" font-weight="bold">+3 C</text><text x="142" y="415" font-family="Noto Sans CJK SC" font-size="26" text-anchor="middle" fill="#b76122" font-weight="bold">Butyrate C4</text><path d="M242,407 L348,407" stroke="#b76122" stroke-width="2.5" fill="none" /><polygon points="348,407 337.0,403.0 337.0,411.0" fill="#b76122" /><text x="478" y="412" font-family="Noto Sans CJK SC" font-size="23" text-anchor="middle" fill="#b76122" font-weight="bold">Absorbed butyrate</text><text x="478" y="439" font-family="Noto Sans CJK SC" font-size="17" text-anchor="middle" fill="#596d77">Epithelial metabolism → β-hydroxybutyrate</text><path d="M600,407 L754,407" stroke="#b76122" stroke-width="2.5" fill="none" stroke-dasharray="2 6" /><polygon points="754,407 743.0,403.0 743.0,411.0" fill="#b76122" /><text x="675" y="396" font-family="Noto Sans CJK SC" font-size="17" text-anchor="middle" fill="#596d77">Supply unverified</text><text x="878" y="415" font-family="Noto Sans CJK SC" font-size="23" text-anchor="middle" fill="#b76122" font-weight="bold">Butyryl-CoA · C4</text><path d="M1006,407 L1190,407" stroke="#b76122" stroke-width="2.5" fill="none" stroke-dasharray="9 6" /><polygon points="1190,407 1179.0,403.0 1179.0,411.0" fill="#b76122" /><text x="1098" y="396" font-family="Noto Sans CJK SC" font-size="18" text-anchor="middle" fill="#b76122" font-weight="bold">ACC side reaction*</text><rect x="1210" y="380" width="391" height="55" rx="12" fill="#f8ecdf" stroke="none" /><text x="1405" y="415" font-family="Noto Sans CJK SC" font-size="24" text-anchor="middle" fill="#b76122" font-weight="bold">Ethylmalonyl-CoA · C5</text><text x="1815" y="415" font-family="Noto Sans CJK SC" font-size="29" text-anchor="middle" fill="#b76122" font-weight="bold">+4 C</text><text x="1000" y="504" font-family="Noto Sans CJK SC" font-size="23" text-anchor="middle" fill="#596d77">FASN uses these primers / CoA donors; +2 / +3 / +4 are net carbons retained after decarboxylation.</text><text x="53" y="551" font-family="Noto Sans CJK SC" font-size="27" text-anchor="start" fill="#253844" font-weight="bold">3  Candidate FASN assembly: three extensions → branched acids</text><text x="1000" y="588" font-family="Noto Sans CJK SC" font-size="21" text-anchor="middle" fill="#596d77">Each cycle: condensation → reduction → dehydration → reduction (NADPH) | ACP-bound intermediates; Cn = acyl carbons</text><text x="183.0489539748954" y="636" font-family="Noto Sans CJK SC" font-size="24" text-anchor="middle" fill="#253844" font-weight="bold">Primer</text><text x="557.9072803347281" y="636" font-family="Noto Sans CJK SC" font-size="24" text-anchor="middle" fill="#253844" font-weight="bold">① Extend</text><text x="943.829288702929" y="636" font-family="Noto Sans CJK SC" font-size="24" text-anchor="middle" fill="#253844" font-weight="bold">② Introduce branch</text><text x="1248.3037656903766" y="636" font-family="Noto Sans CJK SC" font-size="24" text-anchor="middle" fill="#253844" font-weight="bold">③ Extend again</text><text x="1748.4016736401675" y="636" font-family="Noto Sans CJK SC" font-size="24" text-anchor="middle" fill="#253844" font-weight="bold">Products / C4 branch</text><svg width="1940" height="488.65271966527195" viewBox="0.00 0.00 1195.00 301.00" x="30" y="654">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(7.2 293.6)">
+
+<g id="edge1" class="edge">
+<title>n0_0-&gt;n0_1</title>
+<path fill="none" stroke="#246fa5" stroke-width="1.4" stroke-dasharray="5,2" d="M160.19,-243.2C189.65,-243.2 223.46,-243.2 252.13,-243.2" />
+<polygon fill="#246fa5" stroke="#246fa5" stroke-width="1.4" points="251.84,-245.48 258.34,-243.2 251.84,-240.93 251.84,-245.48" />
+<rect x="185.805390625" y="-282.07000000000005" width="63.44921875" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="217.53" y="-269.85" font-family="Noto Sans CJK SC" font-size="13.00" fill="#23776c">+ malonyl</text>
+<rect x="204.168671875" y="-262.57" width="26.72265625" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="217.53" y="-250.35" font-family="Noto Sans CJK SC" font-size="13.00" fill="#23776c">+2C</text>
+</g>
+
+
+<g id="edge2" class="edge">
+<title>n0_1-&gt;n0_2</title>
+<path fill="none" stroke="#246fa5" stroke-width="1.4" stroke-dasharray="5,2" d="M375.44,-243.2C412.03,-243.2 459.59,-243.2 496.52,-243.2" />
+<polygon fill="#246fa5" stroke="#246fa5" stroke-width="1.4" points="496.09,-245.48 502.59,-243.2 496.09,-240.93 496.09,-245.48" />
+<rect x="387.27765625" y="-282.07000000000005" width="105.8046875" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="440.18" y="-269.85" font-family="Noto Sans CJK SC" font-size="13.00" fill="#8051a0">+ methylmalonyl</text>
+<rect x="426.818671875" y="-262.57" width="26.72265625" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="440.18" y="-250.35" font-family="Noto Sans CJK SC" font-size="13.00" fill="#8051a0">+3C</text>
+</g>
+
+
+<g id="edge3" class="edge">
+<title>n0_2-&gt;n0_3</title>
+<path fill="none" stroke="#246fa5" stroke-width="1.4" stroke-dasharray="5,2" d="M606.42,-243.2C630.24,-243.2 658.92,-243.2 683.77,-243.2" />
+<polygon fill="#246fa5" stroke="#246fa5" stroke-width="1.4" points="683.77,-245.48 690.27,-243.2 683.77,-240.93 683.77,-245.48" />
+<rect x="617.755390625" y="-282.07000000000005" width="63.44921875" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="649.48" y="-269.85" font-family="Noto Sans CJK SC" font-size="13.00" fill="#23776c">+ malonyl</text>
+<rect x="636.118671875" y="-262.57" width="26.72265625" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="649.48" y="-250.35" font-family="Noto Sans CJK SC" font-size="13.00" fill="#23776c">+2C</text>
+</g>
+
+
+<g id="edge4" class="edge">
+<title>n0_3-&gt;n0_4</title>
+<path fill="none" stroke="#246fa5" stroke-width="1.4" stroke-dasharray="5,2" d="M794.1,-243.2C826.48,-243.2 870.42,-243.2 912.75,-243.2" />
+<polygon fill="#246fa5" stroke="#246fa5" stroke-width="1.4" points="912.57,-245.48 919.07,-243.2 912.57,-240.93 912.57,-245.48" />
+<rect x="805.444921875" y="-262.57" width="104.41015625" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="857.65" y="-250.35" font-family="Noto Sans CJK SC" font-size="13.00" fill="#246fa5">Early hydrolysis*</text>
+</g>
+
+
+
+<g id="edge5" class="edge">
+<title>n1_0-&gt;n1_1</title>
+<path fill="none" stroke="#8051a0" stroke-width="1.4" stroke-dasharray="5,2" d="M174.61,-143.2C200.32,-143.2 228.03,-143.2 252.11,-143.2" />
+<polygon fill="#8051a0" stroke="#8051a0" stroke-width="1.4" points="251.84,-145.48 258.34,-143.2 251.84,-140.93 251.84,-145.48" />
+<rect x="185.805390625" y="-182.07" width="63.44921875" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="217.53" y="-169.85" font-family="Noto Sans CJK SC" font-size="13.00" fill="#23776c">+ malonyl</text>
+<rect x="204.168671875" y="-162.57" width="26.72265625" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="217.53" y="-150.35" font-family="Noto Sans CJK SC" font-size="13.00" fill="#23776c">+2C</text>
+</g>
+
+
+<g id="edge6" class="edge">
+<title>n1_1-&gt;n1_2</title>
+<path fill="none" stroke="#8051a0" stroke-width="1.4" stroke-dasharray="5,2" d="M375.44,-143.2C412.03,-143.2 459.59,-143.2 496.52,-143.2" />
+<polygon fill="#8051a0" stroke="#8051a0" stroke-width="1.4" points="496.09,-145.48 502.59,-143.2 496.09,-140.93 496.09,-145.48" />
+<rect x="387.27765625" y="-182.07" width="105.8046875" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="440.18" y="-169.85" font-family="Noto Sans CJK SC" font-size="13.00" fill="#8051a0">+ methylmalonyl</text>
+<rect x="426.818671875" y="-162.57" width="26.72265625" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="440.18" y="-150.35" font-family="Noto Sans CJK SC" font-size="13.00" fill="#8051a0">+3C</text>
+</g>
+
+
+<g id="edge7" class="edge">
+<title>n1_2-&gt;n1_3</title>
+<path fill="none" stroke="#8051a0" stroke-width="1.4" stroke-dasharray="5,2" d="M606.42,-143.2C630.24,-143.2 658.92,-143.2 683.77,-143.2" />
+<polygon fill="#8051a0" stroke="#8051a0" stroke-width="1.4" points="683.77,-145.48 690.27,-143.2 683.77,-140.93 683.77,-145.48" />
+<rect x="617.755390625" y="-182.07" width="63.44921875" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="649.48" y="-169.85" font-family="Noto Sans CJK SC" font-size="13.00" fill="#23776c">+ malonyl</text>
+<rect x="636.118671875" y="-162.57" width="26.72265625" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="649.48" y="-150.35" font-family="Noto Sans CJK SC" font-size="13.00" fill="#23776c">+2C</text>
+</g>
+
+
+<g id="edge8" class="edge">
+<title>n1_3-&gt;n1_4</title>
+<path fill="none" stroke="#8051a0" stroke-width="1.4" stroke-dasharray="5,2" d="M794.1,-143.2C826.48,-143.2 870.42,-143.2 912.75,-143.2" />
+<polygon fill="#8051a0" stroke="#8051a0" stroke-width="1.4" points="912.57,-145.48 919.07,-143.2 912.57,-140.93 912.57,-145.48" />
+<rect x="805.444921875" y="-162.57" width="104.41015625" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="857.65" y="-150.35" font-family="Noto Sans CJK SC" font-size="13.00" fill="#8051a0">Early hydrolysis*</text>
+</g>
+
+
+
+<g id="edge9" class="edge">
+<title>n2_0-&gt;n2_1</title>
+<path fill="none" stroke="#b76122" stroke-width="1.4" stroke-dasharray="5,2" d="M160.19,-43.2C189.65,-43.2 223.46,-43.2 252.13,-43.2" />
+<polygon fill="#b76122" stroke="#b76122" stroke-width="1.4" points="251.84,-45.48 258.34,-43.2 251.84,-40.93 251.84,-45.48" />
+<rect x="185.805390625" y="-82.07" width="63.44921875" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="217.53" y="-69.85" font-family="Noto Sans CJK SC" font-size="13.00" fill="#23776c">+ malonyl</text>
+<rect x="204.168671875" y="-62.57" width="26.72265625" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="217.53" y="-50.35" font-family="Noto Sans CJK SC" font-size="13.00" fill="#23776c">+2C</text>
+</g>
+
+<g id="edge10" class="edge">
+<title>n2_1-&gt;n2_2</title>
+<path fill="none" stroke="#b76122" stroke-width="1.4" stroke-dasharray="5,2" d="M375.44,-43.2C412.03,-43.2 459.59,-43.2 496.52,-43.2" />
+<polygon fill="#b76122" stroke="#b76122" stroke-width="1.4" points="496.09,-45.48 502.59,-43.2 496.09,-40.93 496.09,-45.48" />
+<rect x="393.2971875" y="-82.07" width="93.765625" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="440.18" y="-69.85" font-family="Noto Sans CJK SC" font-size="13.00" fill="#b76122">+ ethylmalonyl</text>
+<rect x="426.818671875" y="-62.57" width="26.72265625" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="440.18" y="-50.35" font-family="Noto Sans CJK SC" font-size="13.00" fill="#b76122">+4C</text>
+</g>
+
+<g id="edge11" class="edge">
+<title>n2_2-&gt;n2_3</title>
+<path fill="none" stroke="#b76122" stroke-width="1.4" stroke-dasharray="5,2" d="M606.42,-43.2C630.24,-43.2 658.92,-43.2 683.77,-43.2" />
+<polygon fill="#b76122" stroke="#b76122" stroke-width="1.4" points="683.77,-45.48 690.27,-43.2 683.77,-40.93 683.77,-45.48" />
+<rect x="617.755390625" y="-82.07" width="63.44921875" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="649.48" y="-69.85" font-family="Noto Sans CJK SC" font-size="13.00" fill="#23776c">+ malonyl</text>
+<rect x="636.118671875" y="-62.57" width="26.72265625" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="649.48" y="-50.35" font-family="Noto Sans CJK SC" font-size="13.00" fill="#23776c">+2C</text>
+</g>
+
+<g id="edge12" class="edge">
+<title>n2_3-&gt;n2_4</title>
+<path fill="none" stroke="#b76122" stroke-width="1.4" stroke-dasharray="5,2" d="M794.1,-43.2C826.48,-43.2 870.42,-43.2 912.75,-43.2" />
+<polygon fill="#b76122" stroke="#b76122" stroke-width="1.4" points="912.57,-45.48 919.07,-43.2 912.57,-40.93 912.57,-45.48" />
+<rect x="805.444921875" y="-62.57" width="104.41015625" height="15.34" fill="white" stroke="none" /><text xml:space="preserve" text-anchor="middle" x="857.65" y="-50.35" font-family="Noto Sans CJK SC" font-size="13.00" fill="#b76122">Early hydrolysis*</text>
+</g>
+
+<g id="node1" class="node">
+<title>n0_0</title>
+<rect x="14.250600000000006" y="-269.2" width="145.6488" height="52" rx="10" fill="white" stroke="#246fa5" stroke-width="1.2" /><text xml:space="preserve" text-anchor="middle" x="87.08" y="-252.55" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">MOA</text>
+<text xml:space="preserve" text-anchor="middle" x="87.08" y="-227.05" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">Acetyl-CoA · C2</text>
+</g>
+
+<g id="node2" class="node">
+<title>n0_1</title>
+<rect x="260.90560000000005" y="-269.2" width="114.1488" height="52" rx="10" fill="white" stroke="#246fa5" stroke-width="1.2" /><text xml:space="preserve" text-anchor="middle" x="317.98" y="-252.55" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">Straight acyl</text>
+<text xml:space="preserve" text-anchor="middle" x="317.98" y="-227.05" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C4</text>
+</g>
+
+<g id="node3" class="node">
+<title>n0_2</title>
+<rect x="505.30000000000007" y="-269.2" width="100.8" height="52" rx="10" fill="white" stroke="#246fa5" stroke-width="1.2" /><text xml:space="preserve" text-anchor="middle" x="555.7" y="-252.55" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C7</text>
+<text xml:space="preserve" text-anchor="middle" x="555.7" y="-227.05" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C2 methyl</text>
+</g>
+
+<g id="node4" class="node">
+<title>n0_3</title>
+<rect x="692.85" y="-269.2" width="100.8" height="52" rx="10" fill="white" stroke="#246fa5" stroke-width="1.2" /><text xml:space="preserve" text-anchor="middle" x="743.25" y="-252.55" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C9</text>
+<text xml:space="preserve" text-anchor="middle" x="743.25" y="-227.05" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C4 methyl</text>
+</g>
+
+<g id="node5" class="node">
+<title>n0_4</title>
+<path fill="white" stroke="#246fa5" stroke-width="1.2" d="M1168.9,-286.4C1168.9,-286.4 933.7,-286.4 933.7,-286.4 927.7,-286.4 921.7,-280.4 921.7,-274.4 921.7,-274.4 921.7,-212 921.7,-212 921.7,-206 927.7,-200 933.7,-200 933.7,-200 1168.9,-200 1168.9,-200 1174.9,-200 1180.9,-206 1180.9,-212 1180.9,-212 1180.9,-274.4 1180.9,-274.4 1180.9,-280.4 1174.9,-286.4 1168.9,-286.4" />
+<text x="1051.3" y="-274.2" font-family="Noto Sans CJK SC" font-size="13" text-anchor="middle" fill="#246fa5" font-weight="bold">MOA · 4-Methyloctanoic acid</text><svg version="1.1" baseProfile="full" xml:space="preserve" width="252px" height="57px" viewBox="0 0 252 57" x="925.3" y="-269.2">
+
+<path class="bond-5 atom-5 atom-6" d="M 128.9,6.2 L 131.6,6.2 L 131.6,24.2 L 128.9,24.2 Z" style="fill:#246FA5;fill-rule:evenodd;fill-opacity:1;stroke:#246FA5;stroke-width:0.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<ellipse cx="130.3" cy="24.3" rx="8.4" ry="5.1" class="atom-5" style="fill:#246FA5;fill-rule:evenodd;stroke:#246FA5;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<ellipse cx="130.3" cy="6.2" rx="3.8" ry="3.8" class="atom-6" style="fill:#246FA5;fill-rule:evenodd;stroke:#246FA5;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 78.4,46.3 L 79.8,30.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 81.1,46.6 L 82.5,31.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 81.1,31.8 L 69.5,23.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-1 atom-3" d="M 81.1,31.8 L 97.5,24.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 97.5,24.2 L 113.9,31.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 113.9,31.8 L 123.7,27.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 130.3,20.0 L 130.3,6.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-5 atom-7" d="M 136.8,27.2 L 146.6,31.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 146.6,31.8 L 163.0,24.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-8 atom-9" d="M 163.0,24.2 L 179.4,31.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-9 atom-9 atom-10" d="M 179.4,31.8 L 195.8,24.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 80.5,31.4 L 81.1,31.8 L 81.9,31.4" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 96.7,24.6 L 97.5,24.2 L 98.3,24.6" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 113.0,31.4 L 113.9,31.8 L 114.4,31.6" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 146.1,31.6 L 146.6,31.8 L 147.5,31.4" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 162.2,24.6 L 163.0,24.2 L 163.8,24.6" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 178.6,31.4 L 179.4,31.8 L 180.2,31.4" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-0" d="M 76.1 50.6 Q 76.1 48.9, 77.0 48.0 Q 77.8 47.0, 79.4 47.0 Q 81.0 47.0, 81.8 48.0 Q 82.6 48.9, 82.6 50.6 Q 82.6 52.3, 81.8 53.3 Q 80.9 54.3, 79.4 54.3 Q 77.8 54.3, 77.0 53.3 Q 76.1 52.4, 76.1 50.6 M 79.4 53.5 Q 80.5 53.5, 81.0 52.8 Q 81.6 52.0, 81.6 50.6 Q 81.6 49.2, 81.0 48.5 Q 80.5 47.8, 79.4 47.8 Q 78.3 47.8, 77.7 48.5 Q 77.1 49.2, 77.1 50.6 Q 77.1 52.1, 77.7 52.8 Q 78.3 53.5, 79.4 53.5 " fill="#000000" />
+<path class="atom-2" d="M 55.4 17.4 L 56.4 17.4 L 56.4 20.4 L 60.0 20.4 L 60.0 17.4 L 61.0 17.4 L 61.0 24.5 L 60.0 24.5 L 60.0 21.2 L 56.4 21.2 L 56.4 24.5 L 55.4 24.5 L 55.4 17.4 " fill="#000000" />
+<path class="atom-2" d="M 62.4 20.9 Q 62.4 19.2, 63.3 18.3 Q 64.1 17.3, 65.7 17.3 Q 67.2 17.3, 68.1 18.3 Q 68.9 19.2, 68.9 20.9 Q 68.9 22.6, 68.1 23.6 Q 67.2 24.6, 65.7 24.6 Q 64.1 24.6, 63.3 23.6 Q 62.4 22.6, 62.4 20.9 M 65.7 23.8 Q 66.7 23.8, 67.3 23.1 Q 67.9 22.3, 67.9 20.9 Q 67.9 19.5, 67.3 18.8 Q 66.7 18.1, 65.7 18.1 Q 64.6 18.1, 64.0 18.8 Q 63.4 19.5, 63.4 20.9 Q 63.4 22.3, 64.0 23.1 Q 64.6 23.8, 65.7 23.8 " fill="#000000" />
+<path class="atom-5" d="M 124.3 24.3 Q 124.3 22.5, 125.1 21.6 Q 126.0 20.6, 127.5 20.6 Q 129.0 20.6, 129.8 21.7 L 129.1 22.2 Q 128.6 21.5, 127.5 21.5 Q 126.5 21.5, 125.9 22.2 Q 125.3 22.9, 125.3 24.3 Q 125.3 25.7, 125.9 26.4 Q 126.5 27.1, 127.7 27.1 Q 128.4 27.1, 129.3 26.6 L 129.6 27.4 Q 129.3 27.6, 128.7 27.8 Q 128.1 27.9, 127.5 27.9 Q 126.0 27.9, 125.1 27.0 Q 124.3 26.0, 124.3 24.3 " fill="#000000" />
+<path class="atom-5" d="M 135.3 25.4 L 136.2 25.4 L 136.2 26.2 L 135.3 26.2 L 135.3 27.8 L 134.4 27.8 L 134.4 26.2 L 130.7 26.2 L 130.7 25.5 L 133.8 20.7 L 135.3 20.7 L 135.3 25.4 M 131.9 25.4 L 134.4 25.4 L 134.4 21.4 L 131.9 25.4 " fill="#000000" />
+</svg><text x="1051.3" y="-207.2" font-family="Noto Sans CJK SC" font-size="12" text-anchor="middle" fill="#596d77">C9H18O2</text></g>
+
+<g id="node6" class="node">
+<title>n1_0</title>
+<rect x="-0.0018000000000029104" y="-169.2" width="174.1536" height="52" rx="10" fill="white" stroke="#8051a0" stroke-width="1.2" /><text xml:space="preserve" text-anchor="middle" x="87.08" y="-152.55" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">MNA</text>
+<text xml:space="preserve" text-anchor="middle" x="87.08" y="-127.05" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">Propionyl-CoA · C3</text>
+</g>
+
+<g id="node7" class="node">
+<title>n1_1</title>
+<rect x="260.90560000000005" y="-169.2" width="114.1488" height="52" rx="10" fill="white" stroke="#8051a0" stroke-width="1.2" /><text xml:space="preserve" text-anchor="middle" x="317.98" y="-152.55" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">Straight acyl</text>
+<text xml:space="preserve" text-anchor="middle" x="317.98" y="-127.05" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C5</text>
+</g>
+
+<g id="node8" class="node">
+<title>n1_2</title>
+<rect x="505.30000000000007" y="-169.2" width="100.8" height="52" rx="10" fill="white" stroke="#8051a0" stroke-width="1.2" /><text xml:space="preserve" text-anchor="middle" x="555.7" y="-152.55" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C8</text>
+<text xml:space="preserve" text-anchor="middle" x="555.7" y="-127.05" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C2 methyl</text>
+</g>
+
+<g id="node9" class="node">
+<title>n1_3</title>
+<rect x="692.85" y="-169.2" width="100.8" height="52" rx="10" fill="white" stroke="#8051a0" stroke-width="1.2" /><text xml:space="preserve" text-anchor="middle" x="743.25" y="-152.55" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C10</text>
+<text xml:space="preserve" text-anchor="middle" x="743.25" y="-127.05" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C4 methyl</text>
+</g>
+
+<g id="node10" class="node">
+<title>n1_4</title>
+<path fill="white" stroke="#8051a0" stroke-width="1.2" d="M1168.9,-186.4C1168.9,-186.4 933.7,-186.4 933.7,-186.4 927.7,-186.4 921.7,-180.4 921.7,-174.4 921.7,-174.4 921.7,-112 921.7,-112 921.7,-106 927.7,-100 933.7,-100 933.7,-100 1168.9,-100 1168.9,-100 1174.9,-100 1180.9,-106 1180.9,-112 1180.9,-112 1180.9,-174.4 1180.9,-174.4 1180.9,-180.4 1174.9,-186.4 1168.9,-186.4" />
+<text x="1051.3" y="-174.2" font-family="Noto Sans CJK SC" font-size="13" text-anchor="middle" fill="#8051a0" font-weight="bold">MNA · 4-Methylnonanoic acid</text><svg version="1.1" baseProfile="full" xml:space="preserve" width="252px" height="57px" viewBox="0 0 252 57" x="925.3" y="-169.2">
+
+<path class="bond-5 atom-5 atom-6" d="M 120.7,6.2 L 123.4,6.2 L 123.4,24.2 L 120.7,24.2 Z" style="fill:#8051A0;fill-rule:evenodd;fill-opacity:1;stroke:#8051A0;stroke-width:0.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<ellipse cx="122.1" cy="24.3" rx="8.4" ry="5.1" class="atom-5" style="fill:#8051A0;fill-rule:evenodd;stroke:#8051A0;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<ellipse cx="122.1" cy="6.2" rx="3.8" ry="3.8" class="atom-6" style="fill:#8051A0;fill-rule:evenodd;stroke:#8051A0;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 70.2,46.3 L 71.6,30.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 72.9,46.6 L 74.3,31.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 72.9,31.8 L 61.3,23.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-1 atom-3" d="M 72.9,31.8 L 89.3,24.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 89.3,24.2 L 105.7,31.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 105.7,31.8 L 115.5,27.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 122.1,20.0 L 122.1,6.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-5 atom-7" d="M 128.6,27.2 L 138.4,31.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 138.4,31.8 L 154.8,24.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-8 atom-9" d="M 154.8,24.2 L 171.2,31.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-9 atom-9 atom-10" d="M 171.2,31.8 L 187.6,24.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-10 atom-10 atom-11" d="M 187.6,24.2 L 204.0,31.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 72.3,31.4 L 72.9,31.8 L 73.7,31.4" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 88.5,24.6 L 89.3,24.2 L 90.1,24.6" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 104.9,31.4 L 105.7,31.8 L 106.2,31.6" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 137.9,31.6 L 138.4,31.8 L 139.3,31.4" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 154.0,24.6 L 154.8,24.2 L 155.6,24.6" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 170.4,31.4 L 171.2,31.8 L 172.0,31.4" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 186.8,24.6 L 187.6,24.2 L 188.4,24.6" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-0" d="M 67.9 50.6 Q 67.9 48.9, 68.8 48.0 Q 69.6 47.0, 71.2 47.0 Q 72.8 47.0, 73.6 48.0 Q 74.4 48.9, 74.4 50.6 Q 74.4 52.3, 73.6 53.3 Q 72.7 54.3, 71.2 54.3 Q 69.6 54.3, 68.8 53.3 Q 67.9 52.4, 67.9 50.6 M 71.2 53.5 Q 72.3 53.5, 72.8 52.8 Q 73.4 52.0, 73.4 50.6 Q 73.4 49.2, 72.8 48.5 Q 72.3 47.8, 71.2 47.8 Q 70.1 47.8, 69.5 48.5 Q 68.9 49.2, 68.9 50.6 Q 68.9 52.1, 69.5 52.8 Q 70.1 53.5, 71.2 53.5 " fill="#000000" />
+<path class="atom-2" d="M 47.2 17.4 L 48.2 17.4 L 48.2 20.4 L 51.8 20.4 L 51.8 17.4 L 52.8 17.4 L 52.8 24.5 L 51.8 24.5 L 51.8 21.2 L 48.2 21.2 L 48.2 24.5 L 47.2 24.5 L 47.2 17.4 " fill="#000000" />
+<path class="atom-2" d="M 54.2 20.9 Q 54.2 19.2, 55.1 18.3 Q 55.9 17.3, 57.5 17.3 Q 59.0 17.3, 59.9 18.3 Q 60.7 19.2, 60.7 20.9 Q 60.7 22.6, 59.9 23.6 Q 59.0 24.6, 57.5 24.6 Q 55.9 24.6, 55.1 23.6 Q 54.2 22.6, 54.2 20.9 M 57.5 23.8 Q 58.5 23.8, 59.1 23.1 Q 59.7 22.3, 59.7 20.9 Q 59.7 19.5, 59.1 18.8 Q 58.5 18.1, 57.5 18.1 Q 56.4 18.1, 55.8 18.8 Q 55.2 19.5, 55.2 20.9 Q 55.2 22.3, 55.8 23.1 Q 56.4 23.8, 57.5 23.8 " fill="#000000" />
+<path class="atom-5" d="M 116.1 24.3 Q 116.1 22.5, 117.0 21.6 Q 117.8 20.6, 119.4 20.6 Q 120.8 20.6, 121.6 21.7 L 120.9 22.2 Q 120.4 21.5, 119.4 21.5 Q 118.3 21.5, 117.7 22.2 Q 117.2 22.9, 117.2 24.3 Q 117.2 25.7, 117.7 26.4 Q 118.3 27.1, 119.5 27.1 Q 120.2 27.1, 121.2 26.6 L 121.4 27.4 Q 121.1 27.6, 120.5 27.8 Q 119.9 27.9, 119.3 27.9 Q 117.8 27.9, 117.0 27.0 Q 116.1 26.0, 116.1 24.3 " fill="#000000" />
+<path class="atom-5" d="M 127.1 25.4 L 128.0 25.4 L 128.0 26.2 L 127.1 26.2 L 127.1 27.8 L 126.2 27.8 L 126.2 26.2 L 122.5 26.2 L 122.5 25.5 L 125.6 20.7 L 127.1 20.7 L 127.1 25.4 M 123.7 25.4 L 126.2 25.4 L 126.2 21.4 L 123.7 25.4 " fill="#000000" />
+</svg><text x="1051.3" y="-107.19999999999999" font-family="Noto Sans CJK SC" font-size="12" text-anchor="middle" fill="#596d77">C10H20O2</text></g>
+
+<g id="node11" class="node">
+<title>n2_0</title>
+<rect x="14.250600000000006" y="-69.2" width="145.6488" height="52" rx="10" fill="white" stroke="#b76122" stroke-width="1.2" /><text xml:space="preserve" text-anchor="middle" x="87.08" y="-52.55" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">EOA</text>
+<text xml:space="preserve" text-anchor="middle" x="87.08" y="-27.05" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">Acetyl-CoA · C2</text>
+</g>
+
+<g id="node12" class="node">
+<title>n2_1</title>
+<rect x="260.90560000000005" y="-69.2" width="114.1488" height="52" rx="10" fill="white" stroke="#b76122" stroke-width="1.2" /><text xml:space="preserve" text-anchor="middle" x="317.98" y="-52.55" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">Straight acyl</text>
+<text xml:space="preserve" text-anchor="middle" x="317.98" y="-27.05" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C4</text>
+</g>
+
+<g id="node13" class="node">
+<title>n2_2</title>
+<rect x="505.30000000000007" y="-69.2" width="100.8" height="52" rx="10" fill="white" stroke="#b76122" stroke-width="1.2" /><text xml:space="preserve" text-anchor="middle" x="555.7" y="-52.55" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C8</text>
+<text xml:space="preserve" text-anchor="middle" x="555.7" y="-27.05" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C2 ethyl</text>
+</g>
+
+<g id="node14" class="node">
+<title>n2_3</title>
+<rect x="692.85" y="-69.2" width="100.8" height="52" rx="10" fill="white" stroke="#b76122" stroke-width="1.2" /><text xml:space="preserve" text-anchor="middle" x="743.25" y="-52.55" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C10</text>
+<text xml:space="preserve" text-anchor="middle" x="743.25" y="-27.05" font-family="Noto Sans CJK SC" font-size="17.00" fill="#253844">C4 ethyl</text>
+</g>
+
+<g id="node15" class="node">
+<title>n2_4</title>
+<path fill="white" stroke="#b76122" stroke-width="1.2" d="M1168.9,-86.4C1168.9,-86.4 933.7,-86.4 933.7,-86.4 927.7,-86.4 921.7,-80.4 921.7,-74.4 921.7,-74.4 921.7,-12 921.7,-12 921.7,-6 927.7,0 933.7,0 933.7,0 1168.9,0 1168.9,0 1174.9,0 1180.9,-6 1180.9,-12 1180.9,-12 1180.9,-74.4 1180.9,-74.4 1180.9,-80.4 1174.9,-86.4 1168.9,-86.4" />
+<text x="1051.3" y="-74.2" font-family="Noto Sans CJK SC" font-size="13" text-anchor="middle" fill="#b76122" font-weight="bold">EOA · 4-Ethyloctanoic acid</text><svg version="1.1" baseProfile="full" xml:space="preserve" width="252px" height="57px" viewBox="0 0 252 57" x="925.3" y="-69.2">
+
+<path class="bond-5 atom-5 atom-6" d="M 129.2,12.7 L 131.4,14.0 L 131.4,28.6 L 129.2,28.6 Z" style="fill:#B76122;fill-rule:evenodd;fill-opacity:1;stroke:#B76122;stroke-width:0.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="bond-6 atom-6 atom-7" d="M 143.6,4.4 L 144.7,6.3 L 131.4,14.0 L 129.2,12.7 Z" style="fill:#B76122;fill-rule:evenodd;fill-opacity:1;stroke:#B76122;stroke-width:0.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<ellipse cx="130.3" cy="28.6" rx="8.4" ry="5.1" class="atom-5" style="fill:#B76122;fill-rule:evenodd;stroke:#B76122;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<ellipse cx="130.3" cy="13.3" rx="3.2" ry="3.2" class="atom-6" style="fill:#B76122;fill-rule:evenodd;stroke:#B76122;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<ellipse cx="144.1" cy="5.4" rx="3.2" ry="3.2" class="atom-7" style="fill:#B76122;fill-rule:evenodd;stroke:#B76122;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 86.6,46.6 L 87.8,34.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 88.9,46.8 L 90.1,34.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 88.9,34.9 L 79.6,28.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-1 atom-3" d="M 88.9,34.9 L 102.7,28.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 102.7,28.6 L 116.5,34.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 116.5,34.9 L 123.9,31.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 130.3,24.5 L 130.3,13.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 130.3,13.3 L 144.1,5.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-5 atom-8" d="M 136.8,31.5 L 144.1,34.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-8 atom-9" d="M 144.1,34.9 L 158.0,28.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-9 atom-9 atom-10" d="M 158.0,28.6 L 171.8,34.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-10 atom-10 atom-11" d="M 171.8,34.9 L 185.6,28.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 88.4,34.6 L 88.9,34.9 L 89.6,34.6" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 102.0,28.9 L 102.7,28.6 L 103.4,28.9" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 115.8,34.6 L 116.5,34.9 L 116.9,34.8" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 130.3,13.9 L 130.3,13.3 L 131.0,12.9" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 143.8,34.8 L 144.1,34.9 L 144.8,34.6" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 157.3,28.9 L 158.0,28.6 L 158.7,28.9" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 171.1,34.6 L 171.8,34.9 L 172.5,34.6" style="fill:none;stroke:#000000;stroke-width:1.3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-0" d="M 84.2 50.8 Q 84.2 49.1, 85.0 48.2 Q 85.8 47.2, 87.4 47.2 Q 89.0 47.2, 89.8 48.2 Q 90.7 49.1, 90.7 50.8 Q 90.7 52.6, 89.8 53.5 Q 89.0 54.5, 87.4 54.5 Q 85.8 54.5, 85.0 53.5 Q 84.2 52.6, 84.2 50.8 M 87.4 53.7 Q 88.5 53.7, 89.1 53.0 Q 89.7 52.3, 89.7 50.8 Q 89.7 49.5, 89.1 48.8 Q 88.5 48.0, 87.4 48.0 Q 86.3 48.0, 85.7 48.7 Q 85.2 49.4, 85.2 50.8 Q 85.2 52.3, 85.7 53.0 Q 86.3 53.7, 87.4 53.7 " fill="#000000" />
+<path class="atom-2" d="M 65.6 22.2 L 66.6 22.2 L 66.6 25.3 L 70.2 25.3 L 70.2 22.2 L 71.1 22.2 L 71.1 29.3 L 70.2 29.3 L 70.2 26.1 L 66.6 26.1 L 66.6 29.3 L 65.6 29.3 L 65.6 22.2 " fill="#000000" />
+<path class="atom-2" d="M 72.6 25.8 Q 72.6 24.1, 73.4 23.1 Q 74.3 22.2, 75.8 22.2 Q 77.4 22.2, 78.2 23.1 Q 79.1 24.1, 79.1 25.8 Q 79.1 27.5, 78.2 28.5 Q 77.4 29.4, 75.8 29.4 Q 74.3 29.4, 73.4 28.5 Q 72.6 27.5, 72.6 25.8 M 75.8 28.6 Q 76.9 28.6, 77.5 27.9 Q 78.1 27.2, 78.1 25.8 Q 78.1 24.4, 77.5 23.7 Q 76.9 23.0, 75.8 23.0 Q 74.8 23.0, 74.2 23.7 Q 73.6 24.4, 73.6 25.8 Q 73.6 27.2, 74.2 27.9 Q 74.8 28.6, 75.8 28.6 " fill="#000000" />
+<path class="atom-5" d="M 124.4 28.6 Q 124.4 26.8, 125.2 25.9 Q 126.0 25.0, 127.6 25.0 Q 129.1 25.0, 129.9 26.0 L 129.2 26.6 Q 128.6 25.8, 127.6 25.8 Q 126.5 25.8, 126.0 26.5 Q 125.4 27.2, 125.4 28.6 Q 125.4 30.0, 126.0 30.7 Q 126.6 31.4, 127.7 31.4 Q 128.5 31.4, 129.4 31.0 L 129.7 31.7 Q 129.3 32.0, 128.8 32.1 Q 128.2 32.2, 127.6 32.2 Q 126.0 32.2, 125.2 31.3 Q 124.4 30.4, 124.4 28.6 " fill="#000000" />
+<path class="atom-5" d="M 135.4 29.7 L 136.3 29.7 L 136.3 30.5 L 135.4 30.5 L 135.4 32.1 L 134.5 32.1 L 134.5 30.5 L 130.8 30.5 L 130.8 29.9 L 133.9 25.1 L 135.4 25.1 L 135.4 29.7 M 132.0 29.7 L 134.5 29.7 L 134.5 25.7 L 132.0 29.7 " fill="#000000" />
+</svg><text x="1051.3" y="-7.200000000000003" font-family="Noto Sans CJK SC" font-size="12" text-anchor="middle" fill="#596d77">C10H20O2</text></g>
+</g>
+</svg><rect x="30" y="1156.652719665272" width="1940" height="67" rx="12" fill="#edf5ef" stroke="none" /><text x="1000" y="1198.652719665272" font-family="Noto Sans CJK SC" font-size="27" text-anchor="middle" fill="#23776c" font-weight="bold">Why C4? The final extension adds 2C at the carboxyl end, shifting the existing branch from C2 → C4.</text><path d="M55,1252.652719665272 L110,1252.652719665272" stroke="#596d77" stroke-width="2.5" fill="none" /><polygon points="110,1252.652719665272 99.0,1248.652719665272 99.0,1256.652719665272" fill="#596d77" /><text x="127" y="1259.652719665272" font-family="Noto Sans CJK SC" font-size="21" text-anchor="start" fill="#596d77">Established biochemistry / physiology</text><path d="M720,1252.652719665272 L775,1252.652719665272" stroke="#596d77" stroke-width="2.5" fill="none" stroke-dasharray="9 6" /><polygon points="775,1252.652719665272 764.0,1248.652719665272 764.0,1256.652719665272" fill="#596d77" /><text x="792" y="1259.652719665272" font-family="Noto Sans CJK SC" font-size="21" text-anchor="start" fill="#596d77">Candidate reaction / assembly</text><path d="M1330,1252.652719665272 L1385,1252.652719665272" stroke="#596d77" stroke-width="2.5" fill="none" stroke-dasharray="2 6" /><polygon points="1385,1252.652719665272 1374.0,1248.652719665272 1374.0,1256.652719665272" fill="#596d77" /><text x="1402" y="1259.652719665272" font-family="Noto Sans CJK SC" font-size="21" text-anchor="start" fill="#596d77">Unresolved cytosolic supply</text><text x="1000" y="1296.652719665272" font-family="Noto Sans CJK SC" font-size="21" text-anchor="middle" fill="#253844">* ACC side reactions, FASN donor acceptance and early release remain unverified in sheep; stereochemistry is unspecified.</text><text x="1000" y="1330.652719665272" font-family="Noto Sans CJK SC" font-size="20" text-anchor="middle" fill="#596d77">ACC, acetyl-CoA carboxylase · FASN, fatty acid synthase · CoA, coenzyme A · ACP, acyl carrier protein</text></svg>

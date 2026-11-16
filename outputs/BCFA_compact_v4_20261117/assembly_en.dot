@@ -1,0 +1,210 @@
+digraph "" {
+	graph [bgcolor=transparent,
+		newrank=true,
+		nodesep=.10,
+		outputorder=edgesfirst,
+		pad=.1,
+		rankdir=LR,
+		ranksep=.35,
+		splines=polyline
+	];
+	node [fillcolor=white,
+		fontcolor="#253844",
+		fontname="Noto Sans CJK SC",
+		fontsize=17,
+		height=.70,
+		label="\N",
+		margin=".10,.06",
+		penwidth=1.2,
+		shape=box,
+		style="rounded,filled"
+	];
+	edge [arrowsize=.65,
+		fontname="Noto Sans CJK SC",
+		fontsize=13,
+		penwidth=1.4,
+		style=dashed
+	];
+	{
+		graph [rank=same];
+		n0_0	[color="#246fa5",
+			fixedsize=false,
+			group=MOA,
+			height=1.20,
+			label="MOA
+Acetyl-CoA · C2",
+			width=1.9];
+		n1_0	[color="#8051a0",
+			fixedsize=false,
+			group=MNA,
+			height=1.20,
+			label="MNA
+Propionyl-CoA · C3",
+			width=1.9];
+		n2_0	[color="#b76122",
+			fixedsize=false,
+			group=EOA,
+			height=1.20,
+			label="EOA
+Acetyl-CoA · C2",
+			width=1.9];
+	}
+	{
+		graph [rank=same];
+		n0_1	[color="#246fa5",
+			fixedsize=false,
+			group=MOA,
+			height=1.20,
+			label="Straight acyl
+C4",
+			width=1.4];
+		n1_1	[color="#8051a0",
+			fixedsize=false,
+			group=MNA,
+			height=1.20,
+			label="Straight acyl
+C5",
+			width=1.4];
+		n2_1	[color="#b76122",
+			fixedsize=false,
+			group=EOA,
+			height=1.20,
+			label="Straight acyl
+C4",
+			width=1.4];
+	}
+	{
+		graph [rank=same];
+		n0_2	[color="#246fa5",
+			fixedsize=false,
+			group=MOA,
+			height=1.20,
+			label="C7
+C2 methyl",
+			width=1.4];
+		n1_2	[color="#8051a0",
+			fixedsize=false,
+			group=MNA,
+			height=1.20,
+			label="C8
+C2 methyl",
+			width=1.4];
+		n2_2	[color="#b76122",
+			fixedsize=false,
+			group=EOA,
+			height=1.20,
+			label="C8
+C2 ethyl",
+			width=1.4];
+	}
+	{
+		graph [rank=same];
+		n0_3	[color="#246fa5",
+			fixedsize=false,
+			group=MOA,
+			height=1.20,
+			label="C9
+C4 methyl",
+			width=1.4];
+		n1_3	[color="#8051a0",
+			fixedsize=false,
+			group=MNA,
+			height=1.20,
+			label="C10
+C4 methyl",
+			width=1.4];
+		n2_3	[color="#b76122",
+			fixedsize=false,
+			group=EOA,
+			height=1.20,
+			label="C10
+C4 ethyl",
+			width=1.4];
+	}
+	{
+		graph [rank=same];
+		n0_4	[color="#246fa5",
+			fixedsize=true,
+			group=MOA,
+			height=1.20,
+			label="",
+			width=3.6];
+		n1_4	[color="#8051a0",
+			fixedsize=true,
+			group=MNA,
+			height=1.20,
+			label="",
+			width=3.6];
+		n2_4	[color="#b76122",
+			fixedsize=true,
+			group=EOA,
+			height=1.20,
+			label="",
+			width=3.6];
+	}
+	n0_0 -> n0_1	[color="#246fa5",
+		fontcolor="#23776c",
+		label="+ malonyl
++2C"];
+	n0_0 -> n1_0	[style=invis,
+		weight=100];
+	n0_1 -> n0_2	[color="#246fa5",
+		fontcolor="#8051a0",
+		label="+ methylmalonyl
++3C"];
+	n0_1 -> n1_1	[style=invis,
+		weight=100];
+	n0_2 -> n0_3	[color="#246fa5",
+		fontcolor="#23776c",
+		label="+ malonyl
++2C"];
+	n0_2 -> n1_2	[style=invis,
+		weight=100];
+	n0_3 -> n0_4	[color="#246fa5",
+		fontcolor="#246fa5",
+		label="Early hydrolysis*"];
+	n0_3 -> n1_3	[style=invis,
+		weight=100];
+	n0_4 -> n1_4	[style=invis,
+		weight=100];
+	n1_0 -> n1_1	[color="#8051a0",
+		fontcolor="#23776c",
+		label="+ malonyl
++2C"];
+	n1_0 -> n2_0	[style=invis,
+		weight=100];
+	n1_1 -> n1_2	[color="#8051a0",
+		fontcolor="#8051a0",
+		label="+ methylmalonyl
++3C"];
+	n1_1 -> n2_1	[style=invis,
+		weight=100];
+	n1_2 -> n1_3	[color="#8051a0",
+		fontcolor="#23776c",
+		label="+ malonyl
++2C"];
+	n1_2 -> n2_2	[style=invis,
+		weight=100];
+	n1_3 -> n1_4	[color="#8051a0",
+		fontcolor="#8051a0",
+		label="Early hydrolysis*"];
+	n1_3 -> n2_3	[style=invis,
+		weight=100];
+	n1_4 -> n2_4	[style=invis,
+		weight=100];
+	n2_0 -> n2_1	[color="#b76122",
+		fontcolor="#23776c",
+		label="+ malonyl
++2C"];
+	n2_1 -> n2_2	[color="#b76122",
+		fontcolor="#b76122",
+		label="+ ethylmalonyl
++4C"];
+	n2_2 -> n2_3	[color="#b76122",
+		fontcolor="#23776c",
+		label="+ malonyl
++2C"];
+	n2_3 -> n2_4	[color="#b76122",
+		fontcolor="#b76122",
+		label="Early hydrolysis*"];
+}

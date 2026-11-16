@@ -1,0 +1,56 @@
+{
+  "language": "en",
+  "structures": [
+    {
+      "name": "MOA",
+      "smiles": "O=C(O)CCC(C)CCCC",
+      "formula": "C9H18O2",
+      "total_carbons": 9,
+      "parent_chain": 8,
+      "branch_carbons": 1,
+      "branch_position": 4,
+      "stereochemistry": "unspecified"
+    },
+    {
+      "name": "MNA",
+      "smiles": "O=C(O)CCC(C)CCCCC",
+      "formula": "C10H20O2",
+      "total_carbons": 10,
+      "parent_chain": 9,
+      "branch_carbons": 1,
+      "branch_position": 4,
+      "stereochemistry": "unspecified"
+    },
+    {
+      "name": "EOA",
+      "smiles": "O=C(O)CCC(CC)CCCC",
+      "formula": "C10H20O2",
+      "total_carbons": 10,
+      "parent_chain": 8,
+      "branch_carbons": 2,
+      "branch_position": 4,
+      "stereochemistry": "unspecified"
+    }
+  ],
+  "route_carbon_arithmetic": "passed",
+  "graph_nodes": 15,
+  "graph_edges": 12,
+  "node_overlap_pairs": [],
+  "editorial_text_labels": 49,
+  "editorial_text_overlap_pairs": [],
+  "png_size": [
+    6000,
+    4077
+  ],
+  "versions": {
+    "pygraphviz": "2.0.4",
+    "rdkit": "2026.9.2",
+    "CairoSVG": "2.9.1",
+    "Pillow": "13.0.0"
+  },
+  "sha256": {
+    "svg": "cb3a3d279648ef8a3d42cefa3238a2dc0f1f72ab4a33056f7de04c060c35aef0",
+    "pdf": "f071855d8d5efa1b12f74d5cd407dc6bc8eba721d2f322319652178239637ac3",
+    "png": "57681aa2f7a7187639c1a1ea67ea6fd6e06f7383725e596a2c4bb644c9606f65"
+  }
+}
