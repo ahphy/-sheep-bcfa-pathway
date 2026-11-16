@@ -86,8 +86,8 @@
     "Pillow": "13.0.0"
   },
   "sha256": {
-    "svg": "55cebb53757fdbf59fff80903d59d05f1cc15a2dd5dcf4ee59f29e2493a8890c",
-    "pdf": "3876cc009ef80f6a07eede5df47469fdd3cd2c09082a075fabf21546b386dd3d",
-    "png": "bae15c814b9300cfeba0682d3d786319deab3f0c9d0120d488c8d7b752e584be"
+    "svg": "0aa008cd036ce8f52b0db86b9df02ad5e49a1a65705095ad52248c13661ebf98",
+    "pdf": "d766fa2ae833d535c493f35021fbfdc574582a06d6cf56dac27cf0cae73602bb",
+    "png": "7a0addabd51da361c35e598e10cb5c32fb1d4f225ccde14892e514129b5383d6"
   }
 }

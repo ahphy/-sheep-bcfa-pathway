@@ -88,6 +88,7 @@ def build(lang):
  text(root,1050,310,L('甲基丙二酰-CoA','Methylmalonyl-CoA'),30,PURPLE,True)
  text(root,1660,215,L('巴豆酰-CoA + CO2 + NADPH','Crotonyl-CoA + CO2 + NADPH'),27,ORANGE)
  text(root,1660,265,'CCR',28,ORANGE,True)
+ ET.SubElement(root,'{'+NS+'}polygon',{'points':'1660,316 1655,304 1665,304','fill':ORANGE})
  text(root,1660,345,L('乙基丙二酰-CoA','Ethylmalonyl-CoA'),30,ORANGE,True)
  ET.SubElement(root,'{'+NS+'}path',{'d':'M1660,280 L1660,310','stroke':ORANGE,'stroke-width':'3'})
  text(root,60,475,L('2  PKS / 未鉴定合成系统：共享碳骨架模型','2  PKS / unidentified synthase: shared carbon assembly model'),30,INK,True,'start')
@@ -105,7 +106,7 @@ def build(lang):
  gg=next(x for x in sroot if x.tag=='{'+NS+'}g');tt=re.search(r'translate\(([-.\d]+)[ ,]+([-.\d]+)\)',gg.get('transform'));tx,ty=map(float,tt.groups())
  top=550;actualh=vb[3]*sc
  sroot.set('x','30');sroot.set('y',str(top));sroot.set('width','2140');sroot.set('height',str(actualh))
- heads=[L('起始引物 R','Primer R'),L('首次延长','First extension'),L('C2 支链引入','Branch at C2'),L('C4 支链形成','Branch at C4'),L('游离脂肪酸','Free fatty acid')]
+ heads=[L('起始引物 R','Primer R'),L('模块1：延长','Module 1: extension'),L('模块2：C2支链','Module 2: C2 branch'),L('模块3：C4支链','Module 3: C4 branch'),L('游离脂肪酸','Free fatty acid')]
  coords=[]
  for j in range(5):
   nd=g.get_node(f's{j}');cx,cy=map(float,nd.attr['pos'].split(','));cy=-cy;nw=float(nd.attr['width'])*72
