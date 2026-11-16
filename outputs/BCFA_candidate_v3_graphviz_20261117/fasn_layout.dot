@@ -1,0 +1,176 @@
+digraph "" {
+	graph [bgcolor=transparent,
+		compound=true,
+		fontname="DejaVu Sans",
+		fontsize=18,
+		newrank=true,
+		nodesep=.45,
+		outputorder=edgesfirst,
+		pad=.25,
+		rankdir=TB,
+		ranksep=.58,
+		splines=polyline
+	];
+	node [fillcolor=white,
+		fontcolor="#243746",
+		fontname="DejaVu Sans",
+		fontsize=16,
+		height=.65,
+		label="\N",
+		margin=".18,.12",
+		penwidth=1.1,
+		shape=box,
+		style="rounded,filled",
+		width=4.7
+	];
+	edge [arrowsize=.75,
+		color="#566875",
+		fontcolor="#566875",
+		fontname="DejaVu Sans",
+		fontsize=13,
+		penwidth=1.3
+	];
+	subgraph cluster_fasn {
+		graph [color="#cbd7dd",
+			fillcolor="#fafbfd",
+			fontcolor="#243746",
+			fontsize=18,
+			label="04  CANDIDATE FASN ASSEMBLY · THREE CARBON-BALANCED ROUTES",
+			labeljust=l,
+			margin=22,
+			style="rounded,filled"
+		];
+		n0_0	[color="#256da6",
+			label="MOA
+Acetyl-CoA · C2"];
+		n0_1	[color="#256da6",
+			label="Butyryl-ACP · C4"];
+		n0_2	[color="#256da6",
+			label="2-Methylhexanoyl-ACP · C7
+Branch at C2"];
+		n0_3	[color="#256da6",
+			label="4-Methyloctanoyl-ACP · C9
+Branch at C4"];
+		product0	[color="#256da6",
+			fixedsize=true,
+			height=2.8,
+			label="",
+			width=4.9];
+		n1_0	[color="#8052a0",
+			label="MNA
+Propionyl-CoA · C3"];
+		n1_1	[color="#8052a0",
+			label="Pentanoyl-ACP · C5"];
+		n1_2	[color="#8052a0",
+			label="2-Methylheptanoyl-ACP · C8
+Branch at C2"];
+		n1_3	[color="#8052a0",
+			label="4-Methylnonanoyl-ACP · C10
+Branch at C4"];
+		product1	[color="#8052a0",
+			fixedsize=true,
+			height=2.8,
+			label="",
+			width=4.9];
+		n2_0	[color="#b96321",
+			label="EOA
+Acetyl-CoA · C2"];
+		n2_1	[color="#b96321",
+			label="Butyryl-ACP · C4"];
+		n2_2	[color="#b96321",
+			label="2-Ethylhexanoyl-ACP · C8
+Branch at C2"];
+		n2_3	[color="#b96321",
+			label="4-Ethyloctanoyl-ACP · C10
+Branch at C4"];
+		product2	[color="#b96321",
+			fixedsize=true,
+			height=2.8,
+			label="",
+			width=4.9];
+	}
+	{
+		graph [rank=same];
+		n0_0;
+		n1_0;
+		n2_0;
+	}
+	{
+		graph [rank=same];
+		n0_1;
+		n1_1;
+		n2_1;
+	}
+	{
+		graph [rank=same];
+		n0_2;
+		n1_2;
+		n2_2;
+	}
+	{
+		graph [rank=same];
+		n0_3;
+		n1_3;
+		n2_3;
+	}
+	{
+		graph [rank=same];
+		product0;
+		product1;
+		product2;
+	}
+	n0_0 -> n0_1	[color="#256da6",
+		fontcolor="#256da6",
+		label="+ malonyl-CoA · +2 C retained",
+		style=dashed];
+	n0_1 -> n0_2	[color="#256da6",
+		fontcolor="#256da6",
+		label="+ methylmalonyl-CoA
++3 C retained after CO₂ loss",
+		style=dashed];
+	n0_2 -> n0_3	[color="#256da6",
+		fontcolor="#256da6",
+		label="+ malonyl-CoA · +2 C
+Branch C2 → C4",
+		style=dashed];
+	n0_3 -> product0	[color="#256da6",
+		fontcolor="#256da6",
+		label="Candidate early hydrolysis / release",
+		style=dashed];
+	n1_0 -> n1_1	[color="#8052a0",
+		fontcolor="#8052a0",
+		label="+ malonyl-CoA · +2 C retained",
+		style=dashed];
+	n1_1 -> n1_2	[color="#8052a0",
+		fontcolor="#8052a0",
+		label="+ methylmalonyl-CoA
++3 C retained after CO₂ loss",
+		style=dashed];
+	n1_2 -> n1_3	[color="#8052a0",
+		fontcolor="#8052a0",
+		label="+ malonyl-CoA · +2 C
+Branch C2 → C4",
+		style=dashed];
+	n1_3 -> product1	[color="#8052a0",
+		fontcolor="#8052a0",
+		label="Candidate early hydrolysis / release",
+		style=dashed];
+	n2_0 -> n2_1	[color="#b96321",
+		fontcolor="#b96321",
+		label="+ malonyl-CoA · +2 C retained",
+		style=dashed];
+	n2_1 -> n2_2	[color="#b96321",
+		fontcolor="#b96321",
+		label="+ ethylmalonyl-CoA
++4 C retained after CO₂ loss",
+		style=dashed];
+	n2_2 -> n2_3	[color="#b96321",
+		fontcolor="#b96321",
+		label="+ malonyl-CoA · +2 C
+Branch C2 → C4",
+		style=dashed];
+	n2_3 -> product2	[color="#b96321",
+		fontcolor="#b96321",
+		label="Candidate early hydrolysis / release",
+		style=dashed];
+}

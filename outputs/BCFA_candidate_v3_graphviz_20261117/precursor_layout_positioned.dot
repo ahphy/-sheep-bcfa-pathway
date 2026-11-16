@@ -1,0 +1,226 @@
+digraph "" {
+	graph [bb="0,0,1148,650.69",
+		bgcolor=transparent,
+		compound=true,
+		fontname="DejaVu Sans",
+		fontsize=18,
+		newrank=true,
+		nodesep=.45,
+		outputorder=edgesfirst,
+		pad=.25,
+		rankdir=TB,
+		ranksep=.58,
+		splines=polyline
+	];
+	node [fillcolor=white,
+		fontcolor="#243746",
+		fontname="DejaVu Sans",
+		fontsize=16,
+		height=.65,
+		label="\N",
+		margin=".18,.12",
+		penwidth=1.1,
+		shape=box,
+		style="rounded,filled",
+		width=4.7
+	];
+	edge [arrowsize=.75,
+		color="#566875",
+		fontcolor="#566875",
+		fontname="DejaVu Sans",
+		fontsize=13,
+		penwidth=1.3
+	];
+	subgraph cluster_rumen {
+		graph [bb="9,432.34,1131,642.69",
+			color="#cbd7dd",
+			fillcolor="#f1f7fa",
+			fontcolor="#243746",
+			fontsize=18,
+			label="01  RUMEN · MICROBIAL FERMENTATION",
+			labeljust=l,
+			lheight=0.30,
+			lp="199.25,627.81",
+			lwidth=5.06,
+			margin=22,
+			style="rounded,filled"
+		];
+		diet	[color="#243746",
+			height=0.65,
+			label="Dietary carbohydrates",
+			pos="570,567.54"];
+		sc0	[color="#256da6",
+			height=0.65,
+			label="Acetate · C2",
+			pos="200,477.74"];
+		diet -> sc0	[color="#256da6",
+			fontcolor="#256da6",
+			pos="e,296.41,501.62 473.75,543.7 422.14,531.45 358.44,516.34 305.49,503.77",
+			style=solid];
+		sc1	[color="#8052a0",
+			height=0.65,
+			label="Propionate · C3",
+			pos="570,477.74"];
+		diet -> sc1	[color="#8052a0",
+			fontcolor="#8052a0",
+			pos="e,570,501.58 570,543.93 570,533.87 570,521.84 570,510.87",
+			style=solid];
+		sc2	[color="#b96321",
+			height=0.65,
+			label="Butyrate · C4",
+			pos="940,477.74"];
+		diet -> sc2	[color="#b96321",
+			fontcolor="#b96321",
+			pos="e,843.59,501.62 666.25,543.7 717.86,531.45 781.56,516.34 834.51,503.77",
+			style=solid];
+	}
+	{
+		graph [rank=same];
+		sc0;
+		sc1;
+		sc2;
+	}
+	subgraph cluster_epithelium {
+		graph [bb="8,285.31,1140,415.34",
+			color="#cbd7dd",
+			fillcolor="#f6f8fa",
+			fontcolor="#243746",
+			fontsize=18,
+			label="02  RUMEN EPITHELIUM · ABSORPTION & HOST HANDLING",
+			labeljust=l,
+			lheight=0.30,
+			lp="279.62,400.46",
+			lwidth=7.32,
+			margin=22,
+			style="rounded,filled"
+		];
+		ep0	[color="#256da6",
+			height=0.78167,
+			label="Absorption → portal blood
+→ peripheral acetate supply",
+			pos="199,335.45"];
+		ep1	[color="#8052a0",
+			height=0.78167,
+			label="Absorption → portal blood
+Major hepatic uptake / gluconeogenesis",
+			pos="570,335.45",
+			width=4.7246];
+		ep2	[color="#b96321",
+			height=0.78167,
+			label="Absorption + epithelial metabolism
+Substantial β-hydroxybutyrate formation",
+			pos="945,335.45",
+			width=4.7975];
+	}
+	{
+		graph [rank=same];
+		ep0;
+		ep1;
+		ep2;
+	}
+	subgraph cluster_adipocyte {
+		graph [bb="9,8,1131,252.81",
+			color="#cbd7dd",
+			fillcolor="#f1f8f4",
+			fontcolor="#243746",
+			fontsize=18,
+			label="03  ADIPOCYTE CYTOSOL · ACC PRECURSOR NETWORK",
+			labeljust=l,
+			lheight=0.30,
+			lp="266.75,237.94",
+			lwidth=6.94,
+			margin=22,
+			style="rounded,filled"
+		];
+		coa0	[color="#256da6",
+			height=0.78167,
+			label="Acetate → acetyl-CoA
+Acetyl-CoA synthetase",
+			pos="200,172.92"];
+		don0	[color="#26766b",
+			height=0.78167,
+			label="Malonyl-CoA
+Canonical 2-carbon extension donor",
+			pos="200,58.14"];
+		coa0 -> don0	[color="#26766b",
+			fontcolor="#26766b",
+			label=ACC,
+			lp="213.5,115.53",
+			pos="e,200,86.444 200,144.33 200,129.75 200,111.66 200,95.901",
+			style=solid];
+		coa1	[color="#8052a0",
+			height=0.78167,
+			label="Propionyl-CoA
+Cytosolic supply unverified",
+			pos="570,172.92"];
+		don1	[color="#8052a0",
+			height=0.78167,
+			label="Methylmalonyl-CoA
+Candidate methyl-branch donor",
+			pos="570,58.14"];
+		coa1 -> don1	[color="#8052a0",
+			fontcolor="#8052a0",
+			label="ACC side reaction · candidate",
+			lp="663.38,115.53",
+			pos="e,570,86.444 570,144.33 570,129.75 570,111.66 570,95.901",
+			style=dashed];
+		coa2	[color="#b96321",
+			height=0.78167,
+			label="Butyryl-CoA
+Cytosolic supply unverified",
+			pos="940,172.92"];
+		don2	[color="#b96321",
+			height=0.78167,
+			label="Ethylmalonyl-CoA
+Candidate ethyl-branch donor",
+			pos="940,58.14"];
+		coa2 -> don2	[color="#b96321",
+			fontcolor="#b96321",
+			label="ACC side reaction · candidate",
+			lp="1033.4,115.53",
+			pos="e,940,86.444 940,144.33 940,129.75 940,111.66 940,95.901",
+			style=dashed];
+	}
+	{
+		graph [rank=same];
+		coa0;
+		coa1;
+		coa2;
+	}
+	{
+		graph [rank=same];
+		don0;
+		don1;
+		don2;
+	}
+	sc0 -> ep0	[color="#256da6",
+		fontcolor="#256da6",
+		pos="e,199.2,364.12 199.84,453.89 199.68,432.13 199.45,399.02 199.26,373.49",
+		style=solid];
+	sc1 -> ep1	[color="#8052a0",
+		fontcolor="#8052a0",
+		pos="e,570,364.12 570,453.89 570,432.13 570,399.02 570,373.49",
+		style=solid];
+	sc2 -> ep2	[color="#b96321",
+		fontcolor="#b96321",
+		pos="e,944.01,364.12 940.81,453.89 941.59,432.13 942.77,399.02 943.68,373.49",
+		style=solid];
+	ep0 -> coa0	[color="#256da6",
+		fontcolor="#256da6",
+		label="Indirect supply / activation",
+		lp="284.57,269.06",
+		pos="e,199.83,201.42 199.17,306.85 199.34,280.36 199.59,240.15 199.77,210.89",
+		style=dotted];
+	ep1 -> coa1	[color="#8052a0",
+		fontcolor="#8052a0",
+		label="Indirect supply / activation",
+		lp="655.12,269.06",
+		pos="e,570,201.42 570,306.85 570,280.36 570,240.15 570,210.89",
+		style=dotted];
+	ep2 -> coa2	[color="#b96321",
+		fontcolor="#b96321",
+		label="Indirect supply / activation",
+		lp="1028.2,269.06",
+		pos="e,940.86,201.42 944.14,306.85 943.31,280.24 942.05,239.8 941.14,210.51",
+		style=dotted];
+}

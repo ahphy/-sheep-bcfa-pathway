@@ -1,0 +1,167 @@
+digraph "" {
+	graph [bgcolor=transparent,
+		compound=true,
+		fontname="DejaVu Sans",
+		fontsize=18,
+		newrank=true,
+		nodesep=.45,
+		outputorder=edgesfirst,
+		pad=.25,
+		rankdir=TB,
+		ranksep=.58,
+		splines=polyline
+	];
+	node [fillcolor=white,
+		fontcolor="#243746",
+		fontname="DejaVu Sans",
+		fontsize=16,
+		height=.65,
+		label="\N",
+		margin=".18,.12",
+		penwidth=1.1,
+		shape=box,
+		style="rounded,filled",
+		width=4.7
+	];
+	edge [arrowsize=.75,
+		color="#566875",
+		fontcolor="#566875",
+		fontname="DejaVu Sans",
+		fontsize=13,
+		penwidth=1.3
+	];
+	subgraph cluster_rumen {
+		graph [color="#cbd7dd",
+			fillcolor="#f1f7fa",
+			fontcolor="#243746",
+			fontsize=18,
+			label="01  RUMEN · MICROBIAL FERMENTATION",
+			labeljust=l,
+			margin=22,
+			style="rounded,filled"
+		];
+		diet	[color="#243746",
+			label="Dietary carbohydrates"];
+		sc0	[color="#256da6",
+			label="Acetate · C2"];
+		sc1	[color="#8052a0",
+			label="Propionate · C3"];
+		sc2	[color="#b96321",
+			label="Butyrate · C4"];
+	}
+	{
+		graph [rank=same];
+		sc0;
+		sc1;
+		sc2;
+	}
+	subgraph cluster_epithelium {
+		graph [color="#cbd7dd",
+			fillcolor="#f6f8fa",
+			fontcolor="#243746",
+			fontsize=18,
+			label="02  RUMEN EPITHELIUM · ABSORPTION & HOST HANDLING",
+			labeljust=l,
+			margin=22,
+			style="rounded,filled"
+		];
+		ep0	[color="#256da6",
+			label="Absorption → portal blood
+→ peripheral acetate supply"];
+		ep1	[color="#8052a0",
+			label="Absorption → portal blood
+Major hepatic uptake / gluconeogenesis"];
+		ep2	[color="#b96321",
+			label="Absorption + epithelial metabolism
+Substantial β-hydroxybutyrate formation"];
+	}
+	{
+		graph [rank=same];
+		ep0;
+		ep1;
+		ep2;
+	}
+	subgraph cluster_adipocyte {
+		graph [color="#cbd7dd",
+			fillcolor="#f1f8f4",
+			fontcolor="#243746",
+			fontsize=18,
+			label="03  ADIPOCYTE CYTOSOL · ACC PRECURSOR NETWORK",
+			labeljust=l,
+			margin=22,
+			style="rounded,filled"
+		];
+		coa0	[color="#256da6",
+			label="Acetate → acetyl-CoA
+Acetyl-CoA synthetase"];
+		coa1	[color="#8052a0",
+			label="Propionyl-CoA
+Cytosolic supply unverified"];
+		coa2	[color="#b96321",
+			label="Butyryl-CoA
+Cytosolic supply unverified"];
+		don0	[color="#26766b",
+			label="Malonyl-CoA
+Canonical 2-carbon extension donor"];
+		don1	[color="#8052a0",
+			label="Methylmalonyl-CoA
+Candidate methyl-branch donor"];
+		don2	[color="#b96321",
+			label="Ethylmalonyl-CoA
+Candidate ethyl-branch donor"];
+	}
+	{
+		graph [rank=same];
+		coa0;
+		coa1;
+		coa2;
+	}
+	{
+		graph [rank=same];
+		don0;
+		don1;
+		don2;
+	}
+	diet -> sc0	[color="#256da6",
+		fontcolor="#256da6",
+		style=solid];
+	diet -> sc1	[color="#8052a0",
+		fontcolor="#8052a0",
+		style=solid];
+	diet -> sc2	[color="#b96321",
+		fontcolor="#b96321",
+		style=solid];
+	sc0 -> ep0	[color="#256da6",
+		fontcolor="#256da6",
+		style=solid];
+	sc1 -> ep1	[color="#8052a0",
+		fontcolor="#8052a0",
+		style=solid];
+	sc2 -> ep2	[color="#b96321",
+		fontcolor="#b96321",
+		style=solid];
+	ep0 -> coa0	[color="#256da6",
+		fontcolor="#256da6",
+		label="Indirect supply / activation",
+		style=dotted];
+	ep1 -> coa1	[color="#8052a0",
+		fontcolor="#8052a0",
+		label="Indirect supply / activation",
+		style=dotted];
+	ep2 -> coa2	[color="#b96321",
+		fontcolor="#b96321",
+		label="Indirect supply / activation",
+		style=dotted];
+	coa0 -> don0	[color="#26766b",
+		fontcolor="#26766b",
+		label=ACC,
+		style=solid];
+	coa1 -> don1	[color="#8052a0",
+		fontcolor="#8052a0",
+		label="ACC side reaction · candidate",
+		style=dashed];
+	coa2 -> don2	[color="#b96321",
+		fontcolor="#b96321",
+		label="ACC side reaction · candidate",
+		style=dashed];
+}

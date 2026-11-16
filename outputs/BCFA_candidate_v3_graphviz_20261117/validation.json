@@ -1,0 +1,60 @@
+{
+  "structures": [
+    {
+      "smiles": "O=C(O)CCC(C)CCCC",
+      "formula": "C9H18O2",
+      "total_carbons": 9,
+      "parent_chain": 8,
+      "branch_carbons": 1,
+      "branch_position": 4,
+      "stereochemistry": "unspecified"
+    },
+    {
+      "smiles": "O=C(O)CCC(C)CCCCC",
+      "formula": "C10H20O2",
+      "total_carbons": 10,
+      "parent_chain": 9,
+      "branch_carbons": 1,
+      "branch_position": 4,
+      "stereochemistry": "unspecified"
+    },
+    {
+      "smiles": "O=C(O)CCC(CC)CCCC",
+      "formula": "C10H20O2",
+      "total_carbons": 10,
+      "parent_chain": 8,
+      "branch_carbons": 2,
+      "branch_position": 4,
+      "stereochemistry": "unspecified"
+    }
+  ],
+  "route_carbon_arithmetic": "passed",
+  "layout_checks": [
+    {
+      "panel": "precursor_layout",
+      "node_overlap_pairs": []
+    },
+    {
+      "panel": "fasn_layout",
+      "node_overlap_pairs": []
+    }
+  ],
+  "layout_engine": "PyGraphviz / Graphviz dot",
+  "versions": {
+    "pygraphviz": "2.0.4",
+    "rdkit": "2026.9.2",
+    "CairoSVG": "2.9.1",
+    "Pillow": "13.0.0"
+  },
+  "graph_nodes": 28,
+  "graph_edges": 24,
+  "png_size": [
+    5400,
+    7485
+  ],
+  "sha256": {
+    "svg": "72eb6b5def96941fcb7fba0af71b6721e977cb691fcef81b42972c061ac0a9ab",
+    "pdf": "f9ab8094230a695295ac1e2ef15e217cae26e289cfc0ebee2f654db32044d63c",
+    "png": "70a5aa2f40fb1de6bb7744ba7c0b8e5f9c16687739a7135e8aca12c1c31f50f7"
+  }
+}
