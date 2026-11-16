@@ -1,0 +1,48 @@
+strict digraph "" {
+	graph [bb="0,0,1690.3,106.56",
+		bgcolor=transparent,
+		nodesep=.2,
+		outputorder=edgesfirst,
+		pad=.05,
+		rankdir=LR,
+		ranksep=.30,
+		splines=line
+	];
+	node [fixedsize=true,
+		height=1.48,
+		shape=box,
+		style=invis
+	];
+	edge [arrowsize=.7,
+		color="#263b47",
+		fontcolor="#24776b",
+		fontname="Noto Sans CJK SC",
+		fontsize=17,
+		penwidth=1.6,
+		style=dashed
+	];
+	s0	[pos="75.6,53.28",
+		width=2.1];
+	s1	[pos="393.1,53.28",
+		width=2.9];
+	s0 -> s1	[label="+ malonyl-CoA",
+		lp="219.95,66.03",
+		pos="e,288.33,53.28 151.37,53.28 189.48,53.28 236.63,53.28 279.07,53.28"];
+	s2	[pos="780.8,53.28",
+		width=3.3];
+	s1 -> s2	[fontcolor="#b96324",
+		label="+ branched donor",
+		lp="579.75,66.03",
+		pos="e,661.78,53.28 497.97,53.28 545.54,53.28 602.37,53.28 652.5,53.28"];
+	s3	[pos="1173.9,53.28",
+		width=3.8];
+	s2 -> s3	[label="+ malonyl-CoA",
+		lp="968.35,66.03",
+		pos="e,1036.9,53.28 899.94,53.28 940.16,53.28 985.6,53.28 1027.7,53.28"];
+	s4	[pos="1553.5,53.28",
+		width=3.8];
+	s3 -> s4	[fontcolor="#263b47",
+		label=Hydrolysis,
+		lp="1363.7,66.03",
+		pos="e,1416.5,53.28 1311,53.28 1342.2,53.28 1375.6,53.28 1407.2,53.28"];
+}

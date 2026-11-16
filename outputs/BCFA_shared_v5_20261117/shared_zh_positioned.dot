@@ -1,0 +1,48 @@
+strict digraph "" {
+	graph [bb="0,0,1555.3,106.56",
+		bgcolor=transparent,
+		nodesep=.2,
+		outputorder=edgesfirst,
+		pad=.05,
+		rankdir=LR,
+		ranksep=.30,
+		splines=line
+	];
+	node [fixedsize=true,
+		height=1.48,
+		shape=box,
+		style=invis
+	];
+	edge [arrowsize=.7,
+		color="#263b47",
+		fontcolor="#24776b",
+		fontname="Noto Sans CJK SC",
+		fontsize=17,
+		penwidth=1.6,
+		style=dashed
+	];
+	s0	[pos="75.6,53.28",
+		width=2.1];
+	s1	[pos="380.35,53.28",
+		width=2.9];
+	s0 -> s1	[label="+ 丙二酰-CoA",
+		lp="213.57,66.03",
+		pos="e,275.68,53.28 151.44,53.28 186.13,53.28 228.1,53.28 266.52,53.28"];
+	s2	[pos="708.05,53.28",
+		width=3.3];
+	s1 -> s2	[fontcolor="#b96324",
+		label="+ 支链供体",
+		lp="537,66.03",
+		pos="e,588.79,53.28 484.85,53.28 514.94,53.28 548.17,53.28 579.55,53.28"];
+	s3	[pos="1088.4,53.28",
+		width=3.8];
+	s2 -> s3	[label="+ 丙二酰-CoA",
+		lp="889.22,66.03",
+		pos="e,951.31,53.28 827.21,53.28 863.64,53.28 904.18,53.28 942.21,53.28"];
+	s4	[pos="1418.5,53.28",
+		width=3.8];
+	s3 -> s4	[fontcolor="#263b47",
+		label=水解,
+		lp="1253.4,66.03",
+		pos="e,1281.4,53.28 1225.7,53.28 1241.1,53.28 1256.8,53.28 1272.3,53.28"];
+}
