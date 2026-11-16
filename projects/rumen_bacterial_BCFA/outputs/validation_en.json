@@ -1,0 +1,93 @@
+{
+  "language": "en",
+  "shared_reaction_path": {
+    "nodes": 5,
+    "edges": 4,
+    "generic_smiles": [
+      "[1*]C(=O)S[2*]",
+      "[1*]CCC(=O)S[2*]",
+      "[1*]CCCC([3*])C(=O)S[2*]",
+      "[1*]CCCC([3*])CCC(=O)S[2*]",
+      "[1*]CCCC([3*])CCC(=O)O"
+    ],
+    "acyl_carbons_excluding_R_X": [
+      1,
+      3,
+      5,
+      7,
+      7
+    ]
+  },
+  "products": [
+    {
+      "name": "MOA",
+      "formula": "C9H18O2",
+      "total_carbons": 9,
+      "parent_chain": 8,
+      "branch_carbons": 1,
+      "branch_position": 4,
+      "R": "CH3",
+      "X": "CH3",
+      "stereochemistry": "unspecified"
+    },
+    {
+      "name": "MNA",
+      "formula": "C10H20O2",
+      "total_carbons": 10,
+      "parent_chain": 9,
+      "branch_carbons": 1,
+      "branch_position": 4,
+      "R": "CH2CH3",
+      "X": "CH3",
+      "stereochemistry": "unspecified"
+    },
+    {
+      "name": "EOA",
+      "formula": "C10H20O2",
+      "total_carbons": 10,
+      "parent_chain": 8,
+      "branch_carbons": 2,
+      "branch_position": 4,
+      "R": "CH3",
+      "X": "CH2CH3",
+      "stereochemistry": "unspecified"
+    }
+  ],
+  "R_X_expansion_checks": [
+    {
+      "name": "MOA",
+      "R": "CH3",
+      "X": "CH3",
+      "canonical_smiles": "CCCCC(C)CCC(=O)O"
+    },
+    {
+      "name": "MNA",
+      "R": "CH2CH3",
+      "X": "CH3",
+      "canonical_smiles": "CCCCCC(C)CCC(=O)O"
+    },
+    {
+      "name": "EOA",
+      "R": "CH3",
+      "X": "CH2CH3",
+      "canonical_smiles": "CCCCC(CC)CCC(=O)O"
+    }
+  ],
+  "editorial_label_count": 28,
+  "editorial_overlap_pairs": [],
+  "png_size": [
+    6600,
+    4170
+  ],
+  "versions": {
+    "pygraphviz": "2.0.4",
+    "rdkit": "2026.9.2",
+    "CairoSVG": "2.9.1",
+    "Pillow": "13.0.0"
+  },
+  "sha256": {
+    "svg": "55cebb53757fdbf59fff80903d59d05f1cc15a2dd5dcf4ee59f29e2493a8890c",
+    "pdf": "3876cc009ef80f6a07eede5df47469fdd3cd2c09082a075fabf21546b386dd3d",
+    "png": "bae15c814b9300cfeba0682d3d786319deab3f0c9d0120d488c8d7b752e584be"
+  }
+}
