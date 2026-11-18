@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+sheep_plot_data.csv
+sheep_model_summary.json
+*.xlsx
+sheep_fatty_acid_dashboard.html
+sheep_fatty_acid_overview.png
