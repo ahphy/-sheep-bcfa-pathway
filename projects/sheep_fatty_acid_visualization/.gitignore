@@ -1,7 +1,14 @@
-__pycache__/
-*.pyc
+# Original experiment inputs: never publish in a public repository.
 sheep_plot_data.csv
 sheep_model_summary.json
 *.xlsx
+
+# All generated reports and interactive pages contain research results.
+exports/
 sheep_fatty_acid_dashboard.html
 sheep_fatty_acid_overview.png
+*.tif
+*.tiff
+
+__pycache__/
+*.py[cod]

@@ -6,6 +6,7 @@ Install: pip install plotly matplotlib
 Run: python sheep_visualization.py
 """
 from __future__ import annotations
+import argparse
 import csv
 import html
 import json
@@ -20,14 +21,35 @@ from plotly.subplots import make_subplots
 import plotly.io as pio
 
 BASE = Path(__file__).resolve().parent
+parser = argparse.ArgumentParser(description="98头羊三种脂肪酸及OAV的交互图与高清单图导出")
+parser.add_argument("--data", type=Path, default=BASE / "sheep_plot_data.csv",
+                    help="个体数据CSV，默认与脚本位于同一目录")
+parser.add_argument("--summary", type=Path, default=BASE / "sheep_model_summary.json",
+                    help="模型结果JSON，默认与脚本位于同一目录")
+parser.add_argument("--output-dir", type=Path, default=BASE / "exports",
+                    help="独立图导出目录（默认：exports）")
+parser.add_argument("--dpi", type=int, nargs="+", default=[300, 600],
+                    help="单图PNG的输出分辨率，例如 --dpi 300 600")
+parser.add_argument("--no-tiff", action="store_true", help="跳过单图TIFF输出")
+parser.add_argument("--no-single-html", action="store_true", help="跳过4个单独的Plotly交互HTML")
+args = parser.parse_args()
+DPI_VALUES = sorted(set(args.dpi))
+if not DPI_VALUES or min(DPI_VALUES) <= 0:
+    parser.error("--dpi 必须是正整数")
+OUT = args.output_dir
+OUT.mkdir(parents=True, exist_ok=True)
+for p in (args.data, args.summary):
+    if not p.is_file():
+        parser.error(f"没有找到输入文件：{p}")
+
 records = []
-with (BASE / "sheep_plot_data.csv").open(encoding="utf-8-sig", newline="") as fd:
+with args.data.open(encoding="utf-8-sig", newline="") as fd:
     for row in csv.DictReader(fd):
         for c in ("MOA μg/g", "EOA μg/g", "MNA μg/g",
                   "MOA指数", "EOA指数", "MNA指数", "总指数"):
             row[c] = float(row[c])
         records.append(row)
-meta = json.loads((BASE / "sheep_model_summary.json").read_text(encoding="utf-8"))
+meta = json.loads(args.summary.read_text(encoding="utf-8"))
 order = [r["品种"] for r in meta["raw_breed_comparison"]]
 by = defaultdict(list)
 for r in records:
@@ -250,52 +272,217 @@ output=BASE/"sheep_fatty_acid_dashboard.html"
 output.write_text(markup,encoding="utf-8")
 print("Wrote",output,output.stat().st_size,"bytes")
 
-# Static figure suitable for immediate inspection and sharing.
+# --- Static figures and independent high-resolution exports ---
+# Keep the original 2x2 interactive dashboard while allowing every panel
+# to be exported separately without taking screenshots or cropping the overview.
+import copy
 import matplotlib.pyplot as plt
-from matplotlib.font_manager import FontProperties
-font_path = Path("/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc")
-font=FontProperties(fname=str(font_path)) if font_path.exists() else FontProperties()
-plt.rcParams["axes.unicode_minus"]=False
-figs,axes=plt.subplots(2,2,figsize=(16,11),layout="constrained")
-for j,(column,title,key,statuscol) in enumerate(facets):
-    ax=axes.flat[j]
-    color=COLORS[key]
-    for yi,breed in enumerate(order):
-        sample=by[breed]
-        vals=sorted(float(z[column]) for z in sample)
-        n=len(vals)
-        if n>1:
-            ax.plot([min(vals),max(vals)],[yi,yi],color="#ABB7C3",lw=2,zorder=1)
-            def pq(q):
-                t=(n-1)*q
-                l,h=math.floor(t),math.ceil(t)
-                return vals[l]+(vals[h]-vals[l])*(t-l)
-            ax.plot([pq(.25),pq(.75)],[yi,yi],color=color,lw=10,alpha=.7,solid_capstyle="butt",zorder=2)
-        median=statistics.median(vals)
-        ax.scatter([median],[yi],marker="D",s=75,c=[color],edgecolors="white",lw=1,zorder=5)
-        randomy=random.Random(98231 + yi*761+j*37)
+from matplotlib.font_manager import FontProperties, fontManager
+from matplotlib.lines import Line2D
+
+
+def choose_chinese_font() -> FontProperties:
+    """Use a locally installed Chinese-capable font on Windows/macOS/Linux."""
+    installed = {entry.name for entry in fontManager.ttflist}
+    candidates = (
+        "Microsoft YaHei", "SimHei", "PingFang SC", "Noto Sans CJK SC",
+        "Noto Sans CJK JP", "WenQuanYi Micro Hei", "Arial Unicode MS",
+    )
+    for name in candidates:
+        if name in installed:
+            return FontProperties(family=name)
+    print("警告：未发现支持中文的系统字体，导出图的中文可能变成方框。请安装微软雅黑或 Noto Sans CJK。")
+    return FontProperties()
+
+
+font = choose_chinese_font()
+plt.rcParams.update({
+    "font.family": font.get_family(),
+    "axes.unicode_minus": False,
+    "pdf.fonttype": 42,  # retain embeddable TrueType text in PDF
+    "svg.fonttype": "path",  # avoids missing glyphs when viewing SVG elsewhere
+    "savefig.facecolor": "white",
+})
+
+
+def percentile(values, q):
+    """Linear interpolation matching the original Q1/Q3 display logic."""
+    if len(values) == 1:
+        return values[0]
+    t = (len(values) - 1) * q
+    lo, hi = math.floor(t), math.ceil(t)
+    return values[lo] + (values[hi] - values[lo]) * (t - lo)
+
+
+def draw_distribution(ax, column, title, key, statuscol, panel_index):
+    """Shared renderer for the overview and four standalone panels."""
+    color = COLORS[key]
+    for yi, breed in enumerate(order):
+        sample = by[breed]
+        vals = sorted(float(z[column]) for z in sample)
+        if len(vals) > 1:
+            ax.plot([vals[0], vals[-1]], [yi, yi],
+                    color="#ABB7C3", lw=1.8, zorder=1)
+            ax.plot([percentile(vals, .25), percentile(vals, .75)],
+                    [yi, yi], color=color, lw=9, alpha=.76,
+                    solid_capstyle="butt", zorder=2)
+        ax.scatter([statistics.median(vals)], [yi], marker="D", s=68,
+                   c=[color], edgecolors="white", linewidths=1, zorder=5)
+        rng = random.Random(98231 + yi * 761 + panel_index * 37)
         for z in sample:
-            censored=(str(z[statuscol]).startswith("<") if statuscol
-                      else any(str(z[x]).startswith("<") for x in ("MOA状态","EOA状态","MNA状态")))
-            # Add jitter for the many values at the imputed floor.
-            y0=yi+randomy.uniform(-.23,.23)
-            ax.scatter([float(z[column])],[y0],s=23 if not censored else 39,
-                       marker="o" if not censored else "^",color=color if not censored else "white",
-                       alpha=.8,edgecolors=color,lw=.9,zorder=4)
+            substituted = (
+                str(z[statuscol]).startswith("<") if statuscol is not None
+                else any(str(z[x]).startswith("<") for x in ("MOA状态", "EOA状态", "MNA状态"))
+            )
+            ax.scatter([float(z[column])], [yi + rng.uniform(-.23, .23)],
+                       s=25 if not substituted else 42,
+                       marker="o" if not substituted else "^",
+                       facecolor=color if not substituted else "white",
+                       alpha=.77, edgecolors=color, linewidths=.95, zorder=4)
     ax.set_xscale("log")
     ax.set_yticks(range(len(order)))
-    ax.set_yticklabels([f"{t}  (n={len(by[t])})" for t in order],fontproperties=font,fontsize=10)
+    ax.set_yticklabels([f"{breed}  (n={len(by[breed])})" for breed in order],
+                       fontproperties=font, fontsize=10.2)
     ax.invert_yaxis()
-    ax.grid(axis="x",alpha=.22)
-    ax.set_title(title,fontproperties=font,fontsize=15,pad=12)
-    ax.set_xlabel("浓度 (μg/g)" if j<3 else "总 OAV",fontproperties=font)
-    if j<3:
-        ax.axvline(1.6667,color="#C9914B",lw=1,ls="--")
-    for sp in ("right","top","left"):
-        ax.spines[sp].set_visible(False)
+    ax.set_ylim(len(order) - .55, -.55)
+    ax.grid(axis="x", alpha=.22, color="#8FA1AF")
+    ax.set_axisbelow(True)
+    ax.set_title(title, fontproperties=font, fontsize=15, pad=14)
+    ax.set_xlabel("浓度 (μg/g)" if key != "OAV" else "总加权气味指数 (OAV)",
+                  fontproperties=font, fontsize=11, labelpad=8)
+    ax.tick_params(axis="x", labelsize=9.5)
+    if key != "OAV":
+        ax.axvline(1.6667, color="#C9914B", linewidth=1.25, linestyle="--", zorder=0)
+    for spine in ("top", "right", "left"):
+        ax.spines[spine].set_visible(False)
+    ax.spines["bottom"].set_color("#B4C1CE")
+
+
+def panel_legend(color):
+    """Legend uses the same symbols as the original Plotly dashboard."""
+    return [
+        Line2D([0], [0], color="#ABB7C3", lw=2, label="最小值–最大值"),
+        Line2D([0], [0], color=color, lw=8, alpha=.76, label="Q1–Q3"),
+        Line2D([0], [0], color=color, marker="D", markersize=7,
+               markeredgecolor="white", lw=0, label="中位数"),
+        Line2D([0], [0], color=color, marker="o", markersize=6,
+               lw=0, label="个体值"),
+        Line2D([0], [0], color=color, marker="^", markersize=7,
+               markerfacecolor="white", lw=0, label="低值替代相关"),
+    ]
+
+
+def save_individual(fig, stem):
+    """Write one plot in requested PNG densities + vector + optional TIFF."""
+    for dpi in DPI_VALUES:
+        dest = OUT / f"{stem}_{dpi}dpi.png"
+        fig.savefig(dest, dpi=dpi, bbox_inches="tight", facecolor="white")
+        print("导出", dest.name)
+    if not args.no_tiff:
+        dpi = max(DPI_VALUES)
+        dest = OUT / f"{stem}_{dpi}dpi.tif"
+        fig.savefig(dest, dpi=dpi, bbox_inches="tight", facecolor="white",
+                    pil_kwargs={"compression": "tiff_lzw"})
+        print("导出", dest.name)
+    for ext in ("pdf", "svg"):
+        dest = OUT / f"{stem}.{ext}"
+        fig.savefig(dest, bbox_inches="tight", facecolor="white")
+        print("导出", dest.name)
+
+
+# 1. A clean 2x2 overview (300 dpi PNG, PDF, SVG).
+figs, axes = plt.subplots(2, 2, figsize=(17, 10.5), layout="constrained")
+for j, (column, title, key, statuscol) in enumerate(facets):
+    draw_distribution(axes.flat[j], column, title, key, statuscol, j)
 figs.suptitle("不同品种三种脂肪酸的范围与分布，以及加权气味指数",
-              fontproperties=font,fontsize=22,weight="bold")
-png=BASE/"sheep_fatty_acid_overview.png"
-figs.savefig(png,dpi=170,bbox_inches="tight",facecolor="white")
+              fontproperties=font, fontsize=21, fontweight="bold")
+for output_file in (
+    BASE / "sheep_fatty_acid_overview.png",
+    OUT / "sheep_fatty_acid_overview_300dpi.png",
+):
+    figs.savefig(output_file, dpi=300, bbox_inches="tight", facecolor="white")
+for ext in ("pdf", "svg"):
+    figs.savefig(OUT / f"sheep_fatty_acid_overview.{ext}",
+                 bbox_inches="tight", facecolor="white")
 plt.close(figs)
-print("Saved preview",png,png.stat().st_size)
+
+# 2. Four independently rendered distribution panels.
+for j, (column, title, key, statuscol) in enumerate(facets):
+    standalone, ax = plt.subplots(figsize=(10.2, 5.7))
+    draw_distribution(ax, column, title, key, statuscol, j)
+    standalone.subplots_adjust(left=.22, right=.97, top=.87, bottom=.23)
+    standalone.legend(handles=panel_legend(COLORS[key]), ncol=5,
+                      loc="lower center", bbox_to_anchor=(.5, .025),
+                      frameon=False, prop=font, fontsize=9)
+    save_individual(standalone, f"panel_{key}")
+    plt.close(standalone)
+
+# 3. Adjusted breed comparison also gets independent static exports.
+standalone, ax = plt.subplots(figsize=(10.2, 5.5))
+for i, r in enumerate(adj):
+    breed = r["品种"]
+    orig = float(raw[breed]["总指数均值"])
+    adjusted = float(r["标准化预测均值"])
+    ax.plot([orig, adjusted], [i, i], color="#B5BFCA", linewidth=2, zorder=1)
+    ax.scatter([orig], [i], s=74, marker="o", color="#ADB6C0", zorder=3)
+    ax.scatter([adjusted], [i], s=92, marker="D", color="#266C95", zorder=4)
+ax.set_yticks(range(len(adj)))
+ax.set_yticklabels([f"{r['品种']}  (n={r['模型有效n']})" for r in adj],
+                   fontproperties=font, fontsize=10.2)
+ax.set_ylim(len(adj) - .55, -.55)
+ax.set_xscale("log")
+ax.set_xlabel("平均加权气味指数 (OAV，log 坐标)", fontproperties=font, fontsize=11)
+ax.set_title("控制性别与月龄后的品种比较（模型有效 n=96）",
+             fontproperties=font, fontsize=15, pad=14)
+ax.grid(axis="x", alpha=.22, color="#8FA1AF")
+ax.set_axisbelow(True)
+for spine in ("top", "right", "left"):
+    ax.spines[spine].set_visible(False)
+standalone.subplots_adjust(left=.27, right=.96, top=.86, bottom=.23)
+legend = [
+    Line2D([0], [0], marker="o", lw=0, color="#ADB6C0", markersize=9, label="原始均值"),
+    Line2D([0], [0], marker="D", lw=0, color="#266C95", markersize=9, label="校正后预测均值"),
+]
+standalone.legend(handles=legend, ncol=2, loc="lower center",
+                  bbox_to_anchor=(.5, .05), frameon=False, prop=font)
+save_individual(standalone, "panel_Adjusted_OAV")
+plt.close(standalone)
+
+# 4. Keep interactive output as before; additionally export independent HTML
+# with hover labels to allow each individual plot to be inspected in isolation.
+if not args.no_single_html:
+    for j, (column, title, key, statuscol) in enumerate(facets):
+        rr, cc = divmod(j, 2)
+        standalone = go.Figure()
+        for trace in fig.select_traces(row=rr + 1, col=cc + 1):
+            trace_copy = copy.deepcopy(trace)
+            trace_copy.update(xaxis="x", yaxis="y")
+            standalone.add_trace(trace_copy)
+        standalone.update_layout(
+            template="plotly_white", width=1120, height=550,
+            title=dict(text=title, x=.04, font=dict(size=21)),
+            font=dict(family="Arial,'Noto Sans CJK SC','Microsoft Yahei',sans-serif", size=12),
+            margin=dict(l=200, r=50, t=90, b=70),
+            paper_bgcolor="white", plot_bgcolor="white",
+            hoverlabel=dict(bgcolor="white", font_size=12),
+            showlegend=False,
+        )
+        standalone.update_yaxes(tickvals=list(range(len(order))),
+            ticktext=[f"{b}  n={len(by[b])}" for b in order],
+            range=[len(order)-.40, -.57], showgrid=False)
+        standalone.update_xaxes(type="log",
+            title_text="浓度 (μg/g)" if j < 3 else "总气味指数 (OAV)",
+            showgrid=True, gridcolor="#E6EBF0")
+        if j < 3:
+            standalone.add_vline(x=1.6667, line_color="#CF8D48",
+                                 line_dash="dot", line_width=1.3)
+        pio.write_html(standalone, OUT / f"panel_{key}_interactive.html",
+                       include_plotlyjs=True, full_html=True,
+                       config={"displaylogo": False, "responsive": True})
+        print("导出", f"panel_{key}_interactive.html")
+    pio.write_html(fig2, OUT / "panel_Adjusted_OAV_interactive.html",
+                   include_plotlyjs=True, full_html=True,
+                   config={"displaylogo": False, "responsive": True})
+    print("导出 panel_Adjusted_OAV_interactive.html")
+
+print("全部导出完成。高清单图目录：", OUT)
